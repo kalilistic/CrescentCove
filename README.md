@@ -10,7 +10,6 @@
   <a href="https://ci.appveyor.com/project/kalilistic/crescentcove/branch/master/tests"><img src="https://img.shields.io/appveyor/tests/kalilistic/crescentcove"></a>
   <a href="https://codecov.io/gh/kalilistic/crescentcove/branch/master"><img src="https://img.shields.io/codecov/c/gh/kalilistic/crescentcove"></a>
   <a href="https://github.com/kalilistic/crescentcove/blob/master/LICENSE"><img src="https://img.shields.io/github/license/kalilistic/crescentcove?color=lightgrey"></a>
-  <a href="https://github.com/kalilistic/crescentcove/blob/master/LICENSE"><img src="https://img.shields.io/github/license/kalilistic/crescentcove?color=lightgrey"></a>
   <a href="https://discord.gg/ftn4k7x"><img src="https://img.shields.io/badge/chat-on%20discord-7289da.svg"></a>
 </p>
 
