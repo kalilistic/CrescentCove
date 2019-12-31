@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-namespace CrescentCove.Test
+namespace FFXIV.CrescentCove.Test
 {
     [TestFixture]
     public class GameDataManagerTest

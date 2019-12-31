@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
-using CrescentCove.Model;
 
-namespace CrescentCove
+namespace FFXIV.CrescentCove
 {
     public class GameDataRepository<T> : IGameDataRepository<T> where T : IGameData, new()
     {
@@ -18,12 +17,17 @@ namespace CrescentCove
             {
                 string gameDataStr;
                 while ((gameDataStr = sr.ReadLine()) != null)
-                {
-                    var gameDataStrFields = gameDataStr.Split(GameDataConstants.Separator);
-                    var gameData = new T();
-                    gameData.SetPropsByStr(gameDataStrFields);
-                    _gameDataList.Add(gameData);
-                }
+                    try
+                    {
+                        var gameDataStrFields = gameDataStr.Split(GameDataConstants.Separator);
+                        var gameData = new T();
+                        gameData.SetPropsByStr(gameDataStrFields);
+                        _gameDataList.Add(gameData);
+                    }
+                    catch (Exception)
+                    {
+                        // ignored
+                    }
             }
         }
 
@@ -49,6 +53,11 @@ namespace CrescentCove
             {
                 return default;
             }
+        }
+
+        public T GetById(uint id)
+        {
+            return GetById(Convert.ToInt32(id));
         }
     }
 }

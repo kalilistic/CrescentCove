@@ -7,7 +7,7 @@
     <ProjectGuid>{BA67887B-6542-48B8-BBF9-0114BF09A3EF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CrescentCove</RootNamespace>
+    <RootNamespace>FFXIV.CrescentCove</RootNamespace>
     <AssemblyName>CrescentCove</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -37,6 +37,9 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\TerritoryType.cs" />
+    <Compile Include="Model\PlaceName.cs" />
+    <Compile Include="Model\Map.cs" />
     <Compile Include="Model\ClassJob.cs" />
     <Compile Include="Model\ContentFinderCondition.cs" />
     <Compile Include="GameDataConstants.cs" />
@@ -48,7 +51,10 @@
     <Compile Include="Model\IContentFinderCondition.cs" />
     <Compile Include="Model\IGameData.cs" />
     <Compile Include="Model\IItem.cs" />
+    <Compile Include="Model\IPlaceName.cs" />
     <Compile Include="Model\Item.cs" />
+    <Compile Include="Model\IMap.cs" />
+    <Compile Include="Model\ITerritoryType.cs" />
     <Compile Include="Model\IWorld.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -62,12 +68,16 @@
     <None Include="Properties\ClassJob.csv" />
     <None Include="Properties\ContentFinderCondition.csv" />
     <None Include="Properties\Item.csv" />
+    <None Include="Properties\Map.csv" />
+    <None Include="Properties\PlaceName.csv" />
+    <None Include="Properties\TerritoryType.csv" />
     <None Include="Properties\World.csv" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

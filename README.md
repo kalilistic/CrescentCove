@@ -39,18 +39,18 @@ You can install from <a href="https://www.nuget.org/packages/CrescentCove/">nuge
 // create game data manager
 var gameDataManager = new GameDataManager();
 
-// create repository objects of desired data
-var itemRepository = new GameDataRepository<GameDataItem>(gameDataManager.Item);
-var worldRepository = new GameDataRepository<GameDataWorld>(gameDataManager.World);
+// create repository object of desired data
+var worldRepository = new GameDataRepository<CrescentCove.World>(gameDataManager.World);
 
 // get data from repository
-int worldId = 12;
-var world = worldRepository.GetById(worldId);
+var world = worldRepository.GetById(12);
+var worldName = world.Name;
 ```
 
 ## Considerations
 
-* This has a limited data set but I'm happy to add new models or data elements if there's interest.
+* This has a limited data set for now as I've only added what I needed for my own use cases.
+* I'd be happy to accept PRs or take requests to add more data if needed.
 
 ## How To Update for Patch
 

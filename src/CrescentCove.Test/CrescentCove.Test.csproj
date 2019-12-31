@@ -7,7 +7,7 @@
     <ProjectGuid>{7CE17664-8C24-48B6-AE30-05C66E1D5F80}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CrescentCove.Test</RootNamespace>
+    <RootNamespace>FFXIV.CrescentCove.Test</RootNamespace>
     <AssemblyName>CrescentCove.Test</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -49,16 +49,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\GameDataMock.csv" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CrescentCove\CrescentCove.csproj">
-      <Project>{ba67887b-6542-48b8-bbf9-0114bf09a3ef}</Project>
-      <Name>CrescentCove</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NUnit">
@@ -68,7 +59,15 @@
       <Version>3.15.1</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CrescentCove\CrescentCove.csproj">
+      <Project>{ba67887b-6542-48b8-bbf9-0114bf09a3ef}</Project>
+      <Name>CrescentCove</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\GameDataMock.csv" />
+  </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

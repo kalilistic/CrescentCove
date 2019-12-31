@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CrescentCove.Properties {
+namespace FFXIV.CrescentCove.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace CrescentCove.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CrescentCove.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("FFXIV.CrescentCove.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -147,6 +147,162 @@ namespace CrescentCove.Properties {
         internal static string Item {
             get {
                 return ResourceManager.GetString("Item", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 000
+        ///101
+        ///20132
+        ///30133
+        ///40148
+        ///50152
+        ///60153
+        ///70154
+        ///80164
+        ///90169
+        ///100728
+        ///110128
+        ///120129
+        ///130130
+        ///14373131
+        ///150134
+        ///160135
+        ///170137
+        ///180138
+        ///190139
+        ///200140
+        ///210141
+        ///220145
+        ///230146
+        ///240147
+        ///250156
+        ///260177
+        ///270178
+        ///280179
+        ///29022
+        ///300180
+        ///310157
+        ///320159
+        ///330206
+        ///34849161
+        ///350202
+        ///360207
+        ///370168
+        ///380172
+        ///390208
+        ///40850161
+        ///41372161
+        ///42854163
+        ///43855163
+        ///44856163
+        ///450158
+        ///460162
+        ///470217
+        ///48599166
+        ///49873167
+        ///5092217 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Map {
+            get {
+                return ResourceManager.GetString("Map", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 0
+        ///1
+        ///2
+        ///3
+        ///4
+        ///5
+        ///6
+        ///7
+        ///8
+        ///9
+        ///10
+        ///11
+        ///12
+        ///13
+        ///14
+        ///15
+        ///16
+        ///17
+        ///18Levemete
+        ///19
+        ///20Hydaelyn
+        ///21Eorzea
+        ///22La Noscea
+        ///23The Black Shroud
+        ///24Thanalan
+        ///25Coerthas
+        ///26Mor Dhona
+        ///27Limsa Lominsa
+        ///28Limsa Lominsa Upper Decks
+        ///29Limsa Lominsa Lower Decks
+        ///30Middle La Noscea
+        ///31Lower La Noscea
+        ///32Eastern La Noscea
+        ///33Western La Noscea
+        ///34Upper La Noscea
+        ///35Sastasha
+        ///36Brayflox&apos;s Longstop
+        ///37The Wanderer&apos;s Palace
+        ///38
+        ///39Gridania
+        ///40Ul&apos;dah - Steps of Nald
+        ///41Ul&apos;dah - Steps of Tha [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string PlaceName {
+            get {
+                return ResourceManager.GetString("PlaceName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 10000
+        ///20000
+        ///30000
+        ///40000
+        ///50000
+        ///60000
+        ///70000
+        ///80000
+        ///90000
+        ///100000
+        ///110000
+        ///130000
+        ///140000
+        ///150000
+        ///160000
+        ///170000
+        ///180000
+        ///190000
+        ///200000
+        ///210000
+        ///220000
+        ///240000
+        ///250000
+        ///260000
+        ///270000
+        ///280000
+        ///290000
+        ///128225002811
+        ///129225002912
+        ///130245044013
+        ///131245044114
+        ///13223506522
+        ///13323506533
+        ///134225023015
+        ///135225023116
+        ///1362250242572
+        ///137225023217
+        ///138225023318
+        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string TerritoryType {
+            get {
+                return ResourceManager.GetString("TerritoryType", resourceCulture);
             }
         }
         

@@ -27009,6 +27009,7 @@
 28070the Sound of Furythe Sounds of FuryThe Sound of FuryFalseFalse
 28071priest of Yx'Lokwapriests of Yx'LokwaPriest of Yx'LokwaFalseFalse
 28072starchaserstarchasersStarchaserFalseFalse
+28079Season Fourteen Lone Wolf trophySeason Fourteen Lone Wolf trophiesSeason Fourteen Lone Wolf TrophyFalseFalse
 28081late Allagan mask of fendinglate Allagan masks of fendingLate Allagan Mask of FendingFalseFalse
 28082suit of late Allagan armor of fendingsuits of late Allagan armor of fendingLate Allagan Armor of FendingFalseFalse
 28083pair of late Allagan gloves of fendingpairs of late Allagan gloves of fendingLate Allagan Gloves of FendingFalseFalse
@@ -27044,7 +27045,10 @@
 28113pair of late Allagan gloves of castingpairs of late Allagan gloves of castingLate Allagan Gloves of CastingFalseFalse
 28114pair of late Allagan bottoms of castingpairs of late Allagan bottoms of castingLate Allagan Bottoms of CastingFalseFalse
 28115pair of late Allagan boots of castingpairs of late Allagan boots of castingLate Allagan Boots of CastingFalseFalse
+28116morbol hornmorbol hornsMorbol HornFalseFalse
 28117portly porxie hornportly porxie hornsPortly Porxie HornFalseFalse
+28118Epimetheus identification keyEpimetheus identification keysEpimetheus Identification KeyFalseFalse
+28120Construct VII coreConstruct VII coresConstruct VII CoreFalseFalse
 28121shadow gwiber trumpetshadow gwiber trumpetsShadow Gwiber TrumpetFalseFalse
 28123forgiven reticence hornforgiven reticence hornsForgiven Reticence HornFalseFalse
 28126Eulmoran inner wallEulmoran inner wallsEulmoran Inner WallFalseFalse
@@ -27065,7 +27069,9 @@
 28145ale tapale tapsAle TapFalseFalse
 28146Allagan tomestone of frivolityAllagan tomestones of frivolityAllagan Tomestone of FrivolityTrueFalse
 28147tabletop hat standtabletop hat standsTabletop Hat StandFalseFalse
+28148vanity mirrorvanity mirrorsVanity MirrorFalseFalse
 28149necklace display standnecklace display standsNecklace Display StandFalseFalse
+28150pile of empty boxespiles of empty boxesEmpty BoxesFalseFalse
 28151set of liquor bottlessets of liquor bottlesSet of Liquor BottlesFalseFalse
 28152choir concert advertisementchoir concert advertisementsChoir Concert AdvertisementFalseFalse
 28153Starlight roll cakeStarlight roll cakesStarlight Roll CakeFalseFalse
@@ -27073,6 +27079,8 @@
 28155stuffed giant beaverstuffed giant beaversStuffed Giant BeaverFalseFalse
 28156stuffed porxiestuffed porxiesStuffed PorxieFalseFalse
 28158chocolate fountainchocolate fountainsChocolate FountainFalseFalse
+28160vegetable gardenvegetable gardensVegetable GardenFalseFalse
+28161cedar treecedar treesCedar TreeFalseFalse
 28162armorer's stallarmorer's stallsArmorer's StallFalseFalse
 28163weaponsmith's stallweaponsmith's stallsWeaponsmith's StallFalseFalse
 28164jeweler's stalljeweler's stallsJeweler's StallFalseFalse
@@ -27108,7 +27116,7 @@
 28197crate of airship fittingscrates of airship fittingsAirship FittingsFalseFalse
 28198Beehive souvenirBeehive souvenirsBeehive SouvenirFalseFalse
 28199lump of raven coallumps of raven coalRaven CoalFalseFalse
-28200assortment of Kholusian seasoningsassortments of Kholusian seasoningsKholusian SeasoningsFalseFalse
+28200assortment of Amh Araeng seasoningsassortments of Amh Araeng seasoningsAmh Araeng SeasoningsFalseFalse
 28201selection of clinquant stonesselections of clinquant stonesClinquant StonesFalseFalse
 28202assortment of airship fitting componentsassortments of airship fitting componentsAirship Fitting ComponentsFalseFalse
 28203package of Kholusian miscellanypackages of Kholusian miscellanyKholusian MiscellanyFalseFalse
@@ -27215,38 +27223,38 @@
 28304ultimate Anarchyultimate AnarchyUltimate AnarchyFalseFalse
 28305pair of ultimate Twashtarpairs of ultimate TwashtarUltimate TwashtarFalseFalse
 28306ultimate Ancileultimate AncileUltimate AncileFalseFalse
-28307replica Anteareplica AnteaReplica AnteaFalseFalse
-28308pair of replica Dumuzispairs of replica DumuzisReplica DumuzisFalseFalse
-28309replica Shamashreplica ShamashReplica ShamashFalseFalse
-28310replica Daboyareplica DaboyaReplica DaboyaFalseFalse
-28311replica Circinaereplica CircinaeReplica CircinaeFalseFalse
-28312pair of replica Kasasagipairs of replica KasasagiReplica KasasagiFalseFalse
-28313replica Xiphiasreplica XiphiasReplica XiphiasFalseFalse
-28314replica Mollfrithreplica MollfrithReplica MollfrithFalseFalse
-28315replica Rose Couvertereplica Rose CouverteReplica Rose CouverteFalseFalse
-28316replica Paikeareplica PaikeaReplica PaikeaFalseFalse
-28317replica Tuahreplica TuahReplica TuahFalseFalse
-28318replica Jebatreplica JebatReplica JebatFalseFalse
-28319replica Albireoreplica AlbireoReplica AlbireoFalseFalse
-28320replica Torigashirareplica TorigashiraReplica TorigashiraFalseFalse
-28321replica Brunelloreplica BrunelloReplica BrunelloFalseFalse
-28322replica Bellerophonreplica BellerophonReplica BellerophonFalseFalse
-28323replica Antea Eurekareplica Antea EurekaReplica Antea EurekaFalseFalse
-28324pair of replica Dumuzis Eurekapairs of replica Dumuzis EurekaReplica Dumuzis EurekaFalseFalse
-28325replica Shamash Eurekareplica Shamash EurekaReplica Shamash EurekaFalseFalse
-28326replica Daboya Eurekareplica Daboya EurekaReplica Daboya EurekaFalseFalse
-28327replica Circinae Eurekareplica Circinae EurekaReplica Circinae EurekaFalseFalse
-28328pair of replica Kasasagi Eurekapairs of replica Kasasagi EurekaReplica Kasasagi EurekaFalseFalse
-28329replica Xiphias Eurekareplica Xiphias EurekaReplica Xiphias EurekaFalseFalse
-28330replica Mollfrith Eurekareplica Mollfrith EurekaReplica Mollfrith EurekaFalseFalse
-28331replica Rose Couverte Eurekareplica Rose Couverte EurekaReplica Rose Couverte EurekaFalseFalse
-28332replica Paikea Eurekareplica Paikea EurekaReplica Paikea EurekaFalseFalse
-28333replica Tuah Eurekareplica Tuah EurekaReplica Tuah EurekaFalseFalse
-28334replica Jebat Eurekareplica Jebat EurekaReplica Jebat EurekaFalseFalse
-28335replica Albireo Eurekareplica Albireo EurekaReplica Albireo EurekaFalseFalse
-28336replica Torigashira Eurekareplica Torigashira EurekaReplica Torigashira EurekaFalseFalse
-28337replica Brunello Eurekareplica Brunello EurekaReplica Brunello EurekaFalseFalse
-28338replica Bellerophon Eurekareplica Bellerophon EurekaReplica Bellerophon EurekaFalseFalse
+28307Antea replicaAntea replicasAntea ReplicaFalseFalse
+28308pair of Dumuzis replicaspairs of Dumuzis replicasDumuzis ReplicasFalseFalse
+28309Shamash replicaShamash replicasShamash ReplicaFalseFalse
+28310Daboya replicaDaboya replicasDaboya ReplicaFalseFalse
+28311Circinae replicaCircinae replicasCircinae ReplicaFalseFalse
+28312pair of Kasasagi replicaspairs of Kasasagi replicasKasasagi ReplicasFalseFalse
+28313Xiphias replicaXiphias replicasXiphias ReplicaFalseFalse
+28314Mollfrith replicaMollfrith replicasMollfrith ReplicaFalseFalse
+28315Rose Couverte replicaRose Couverte replicasRose Couverte ReplicaFalseFalse
+28316Paikea replicaPaikea replicasPaikea ReplicaFalseFalse
+28317Tuah replicaTuah replicasTuah ReplicaFalseFalse
+28318Jebat replicaJebat replicasJebat ReplicaFalseFalse
+28319Albireo replicaAlbireo replicasAlbireo ReplicaFalseFalse
+28320Torigashira replicaTorigashira replicasTorigashira ReplicaFalseFalse
+28321Brunello replicaBrunello replicasBrunello ReplicaFalseFalse
+28322Bellerophon replicaBellerophon replicasBellerophon ReplicaFalseFalse
+28323Antea Eureka replicaAntea Eureka replicasAntea Eureka ReplicaFalseFalse
+28324pair of Dumuzis Eureka replicaspairs of Dumuzis Eureka replicasDumuzis Eureka ReplicaFalseFalse
+28325Shamash Eureka replicaShamash Eureka replicasShamash Eureka ReplicaFalseFalse
+28326Daboya Eureka replicaDaboya Eureka replicasDaboya Eureka ReplicaFalseFalse
+28327Circinae Eureka replicaCircinae Eureka replicasCircinae Eureka ReplicaFalseFalse
+28328pair of Kasasagi Eureka replicaspairs of Kasasagi Eureka replicasKasasagi Eureka ReplicasFalseFalse
+28329Xiphias Eureka replicaXiphias Eureka replicasXiphias Eureka ReplicaFalseFalse
+28330Mollfrith Eureka replicaMollfrith Eureka replicasMollfrith Eureka ReplicaFalseFalse
+28331Rose Couverte Eureka replicaRose Couverte Eureka replicasRose Couverte Eureka ReplicaFalseFalse
+28332Paikea Eureka replicaPaikea Eureka replicasPaikea Eureka ReplicaFalseFalse
+28333Tuah Eureka replicaTuah Eureka replicasTuah Eureka ReplicaFalseFalse
+28334Jebat Eureka replicaJebat Eureka replicasJebat Eureka ReplicaFalseFalse
+28335Albireo Eureka replicaAlbireo Eureka replicasAlbireo Eureka ReplicaFalseFalse
+28336Torigashira Eureka replicaTorigashira Eureka replicasTorigashira Eureka ReplicaFalseFalse
+28337Brunello Eureka replicaBrunello Eureka replicasBrunello Eureka ReplicaFalseFalse
+28338Bellerophon Eureka replicaBellerophon Eureka replicasBellerophon Eureka ReplicaFalseFalse
 28339YoRHa type-51 headband of fendingYoRHa type-51 headbands of fendingYoRHa Type-51 Headband of FendingFalseFalse
 28340YoRHa type-51 jacket of fendingYoRHa type-51 jackets of fendingYoRHa Type-51 Jacket of FendingFalseFalse
 28341pair of YoRHa type-51 gloves of fendingpairs of YoRHa type-51 gloves of fendingYoRHa Type-51 Gloves of FendingFalseFalse
@@ -27383,6 +27391,11 @@
 28479pair of facet fingerless gloves of gatheringpairs of facet fingerless gloves of gatheringFacet Fingerless Gloves of GatheringFalseFalse
 28480pair of facet bottoms of gatheringpairs of facet bottoms of gatheringFacet Bottoms of GatheringFalseFalse
 28481pair of facet boots of gatheringpairs of facet boots of gatheringFacet Boots of GatheringFalseFalse
+28492IncendiarioIncendiarioIncendiarioFalseFalse
+28493pair of Whalaqee earringspairs of Whalaqee earringsWhalaqee EarringsFalseFalse
+28494Whalaqee chokerWhalaqee chokersWhalaqee ChokerFalseFalse
+28495Whalaqee braceletWhalaqee braceletsWhalaqee BraceletFalseFalse
+28496Whalaqee ringWhalaqee ringsWhalaqee RingFalseFalse
 28501Dragonsong reproductionDragonsong reproductionsDragonsong ReproductionFalseFalse
 28502Liberation reproductionLiberation reproductionsLiberation ReproductionFalseFalse
 28503Nightfall reproductionNightfall reproductionsNightfall ReproductionFalseFalse
@@ -27397,39 +27410,39 @@
 28516facet culinary knifefacet culinary knivesFacet Culinary KnifeFalseFalse
 28517facet sledgehammerfacet sledgehammersFacet SledgehammerFalseFalse
 28518facet scythefacet scythesFacet ScytheFalseFalse
-28553Majestic dressMajestic dressMajestic DressFalseFalse
-28554pair of Majestic wristdressespair of Majestic wristdressesMajestic WristdressesFalseFalse
-28555pair of Majestic bootspair of Majestic bootsMajestic BootsFalseFalse
-28558Valentione rose hatValentione rose hatssValentione Rose HatFalseFalse
-28559Valentione rose waistcoatValentione rose wasistcoatValentione Rose WaistcoatFalseFalse
-28560pair of Valentione rose glovespairs of Valentione rose gloves Valentione Rose GlovesFalseFalse
-28561pair of Valentione rose slackspairs of Valentione rose slacks Valentione Rose SlacksFalseFalse
-28562pair of Valentione rose shoespairs of Valentione rose shoes Valentione Rose ShoesFalseFalse
-28563Valentione forget-me-not hatValentione forget-me-not hatsValentione Forget-Me-Not HatFalseFalse
-28564Valentione forget-me-not waistcoatValentione forget-me-not waistcoatValentione Forget-Me-Not WaistcoatFalseFalse
-28565pair of Valentione forget-me-not glovespairs of Valentione forget-me-not gloves Valentione Forget-Me-Not GlovesFalseFalse
-28566pair of Valentione forget-me-not slackspairs of Valentione forget-me-not slacks Valentione Forget-Me-Not SlacksFalseFalse
-28567pair of Valentione forget-me-not shoespairs of Valentione forget-me-not shoes Valentione Forget-Me-Not ShoesFalseFalse
+28553Majestic dressMajestic dressesMajestic DressFalseFalse
+28554pair of Majestic wristdressespairs of Majestic wristdressesMajestic WristdressesFalseFalse
+28555pair of Majestic bootspairs of Majestic bootsMajestic BootsFalseFalse
+28558Valentione rose hatValentione rose hatsValentione Rose HatFalseFalse
+28559Valentione rose waistcoatValentione rose waistcoatsValentione Rose WaistcoatFalseFalse
+28560pair of Valentione rose glovespairs of Valentione rose glovesValentione Rose GlovesFalseFalse
+28561pair of Valentione rose slackspairs of Valentione rose slacksValentione Rose SlacksFalseFalse
+28562pair of Valentione rose shoespairs of Valentione rose shoesValentione Rose ShoesFalseFalse
+28563Valentione forget-me-not hatValentione forget-me-not hatsValentione Forget-me-not HatFalseFalse
+28564Valentione forget-me-not waistcoatValentione forget-me-not waistcoatsValentione Forget-me-not WaistcoatFalseFalse
+28565pair of Valentione forget-me-not glovespairs of Valentione forget-me-not glovesValentione Forget-me-not GlovesFalseFalse
+28566pair of Valentione forget-me-not slackspairs of Valentione forget-me-not slacksValentione Forget-me-not SlacksFalseFalse
+28567pair of Valentione forget-me-not shoespairs of Valentione forget-me-not shoesValentione Forget-me-not ShoesFalseFalse
 28568Valentione acacia hatValentione acacia hatsValentione Acacia HatFalseFalse
-28569Valentione acacia waistcoatValentione acacia waistcoatValentione Acacia WaistcoatFalseFalse
-28570pair of Valentione acacia glovespairs of Valentione acacia gloves Valentione Acacia GlovesFalseFalse
-28571pair of Valentione acacia slackspairs of Valentione acacia slacks Valentione Acacia SlacksFalseFalse
-28572pair of Valentione acacia shoespairs of Valentione acacia shoes Valentione Acacia ShoesFalseFalse
+28569Valentione acacia waistcoatValentione acacia waistcoatsValentione Acacia WaistcoatFalseFalse
+28570pair of Valentione acacia glovespairs of Valentione acacia glovesValentione Acacia GlovesFalseFalse
+28571pair of Valentione acacia slackspairs of Valentione acacia slacksValentione Acacia SlacksFalseFalse
+28572pair of Valentione acacia shoespairs of Valentione acacia shoesValentione Acacia ShoesFalseFalse
 28573Valentione rose ribboned hatValentione rose ribboned hatsValentione Rose Ribboned HatFalseFalse
 28574Valentione rose dressValentione rose dressesValentione Rose DressFalseFalse
-28575pair of Valentione rose ribboned glovespairs of Valentione rose ribboned gloves Valentione Rose Ribboned GlovesFalseFalse
-28576pair of Valentione rose tightspairs of Valentione rose tights Valentione Rose TightsFalseFalse
-28577pair of Valentione rose heelspairs of Valentione rose heels Valentione Rose HeelsFalseFalse
-28578Valentione forget-me-not ribboned hatValentione forget-me-not ribboned hatsValentione Forget-Me-Not Ribboned HatFalseFalse
-28579Valentione forget-me-not dressValentione forget-me-not dressesValentione Forget-Me-Not DressFalseFalse
-28580pair of Valentione forget-me-not ribboned glovespairs of Valentione forget-me-not ribboned gloves Valentione Forget-Me-Not Ribboned GlovesFalseFalse
-28581pair of Valentione forget-me-not tightspairs of Valentione forget-me-not tights Valentione Forget-Me-Not TightsFalseFalse
-28582pair of Valentione forget-me-not heelspairs of Valentione forget-me-not heels Valentione Forget-Me-Not HeelsFalseFalse
+28575pair of Valentione rose ribboned glovespairs of Valentione rose ribboned glovesValentione Rose Ribboned GlovesFalseFalse
+28576pair of Valentione rose tightspairs of Valentione rose tightsValentione Rose TightsFalseFalse
+28577pair of Valentione rose heelspairs of Valentione rose heelsValentione Rose HeelsFalseFalse
+28578Valentione forget-me-not ribboned hatValentione forget-me-not ribboned hatsValentione Forget-me-not Ribboned HatFalseFalse
+28579Valentione forget-me-not dressValentione forget-me-not dressesValentione Forget-me-not DressFalseFalse
+28580pair of Valentione forget-me-not ribboned glovespairs of Valentione forget-me-not ribboned glovesValentione Forget-me-not Ribboned GlovesFalseFalse
+28581pair of Valentione forget-me-not tightspairs of Valentione forget-me-not tightsValentione Forget-me-not TightsFalseFalse
+28582pair of Valentione forget-me-not heelspairs of Valentione forget-me-not heelsValentione Forget-me-not HeelsFalseFalse
 28583Valentione acacia ribboned hatValentione acacia ribboned hatsValentione Acacia Ribboned HatFalseFalse
 28584Valentione acacia dressValentione acacia dressesValentione Acacia DressFalseFalse
-28585pair of Valentione acacia ribboned glovespairs of Valentione acacia ribboned gloves Valentione Acacia Ribboned GlovesFalseFalse
-28586pair of Valentione acacia tightspairs of Valentione acacia tights Valentione Acacia TightsFalseFalse
-28587pair of Valentione acacia heelspairs of Valentione acacia heels Valentione Acacia HeelsFalseFalse
+28585pair of Valentione acacia ribboned glovespairs of Valentione acacia ribboned glovesValentione Acacia Ribboned GlovesFalseFalse
+28586pair of Valentione acacia tightspairs of Valentione acacia tightsValentione Acacia TightsFalseFalse
+28587pair of Valentione acacia heelspairs of Valentione acacia heelsValentione Acacia HeelsFalseFalse
 28588urban coaturban coatsUrban CoatFalseFalse
 28589pair of urban bootspairs of urban bootsUrban BootsFalseFalse
 28590rebel coatrebel coatsRebel CoatFalseFalse
@@ -27438,6 +27451,7 @@
 28593pair of craftsman's coverall bottomspairs of craftsman's coverall bottomsCraftsman's Coverall BottomsFalseFalse
 28594craftsman's singletcraftsman's singletsCraftsman's SingletFalseFalse
 28612copy of Ballroom Etiquette - The Winsome Wallflowercopies of Ballroom Etiquette - The Winsome WallflowerBallroom Etiquette - The Winsome WallflowerFalseFalse
+28613copy of Ballroom Etiquette - Feigning Fatiguecopies of Ballroom Etiquette - Feigning FatigueBallroom Etiquette - Feigning FatigueFalseFalse
 28614copy of Modern Cosmetics - A Wicked Wakecopies of Modern Cosmetics - A Wicked WakeModern Cosmetics - A Wicked WakeFalseFalse
 28615copy of Modern Aesthetics - Modern Legendcopies of Modern Aesthetics - Modern LegendModern Aesthetics - Modern LegendFalseFalse
 28616set of Hades bardingsets of Hades bardingHades BardingFalseFalse
@@ -27447,6 +27461,7 @@
 28620mystic weaponmystic weaponsMystic WeaponFalseFalse
 28621meerkatmeerkatsMeerkatFalseFalse
 28622miniature white knightminiature white knightsMiniature White KnightFalseFalse
+28623Cute JusticeCute JusticesCute JusticeFalseFalse
 28624domakindomakinDomakinFalseFalse
 28625dress-up Estiniendress-up EstiniensDress-up EstinienFalseFalse
 28626little leannanlittle leannainLittle LeannanFalseFalse
@@ -27457,19 +27472,26 @@
 28632manufactured coinmanufactured coinsManufactured CoinFalseFalse
 28633colossus totemcolossus totemsColossus TotemFalseFalse
 28634metal spinnermetal spinnersMetal SpinnerFalseFalse
+28635Greatwood planterGreatwood plantersGreatwood PlanterFalseFalse
 28636shirt display rackshirt display racksShirt Display RackFalseFalse
 28637Lakeland chairLakeland chairsLakeland ChairFalseFalse
 28638Lakeland tableLakeland tablesLakeland TableFalseFalse
 28639leather sofaleather sofasLeather SofaFalseFalse
 28640Il Mheg flower lampIl Mheg flower lampsIl Mheg Flower LampFalseFalse
 28641macaron cushionmacaron cushionsMacaron CushionFalseFalse
+28642wooden deckwooden decksWooden DeckFalseFalse
+28643Whalaqee Revenge Blast totemWhalaqee Revenge Blast totemsWhalaqee Revenge Blast TotemFalseFalse
+28644Whalaqee Angel Whisper totemWhalaqee Angel Whisper totemsWhalaqee Angel Whisper TotemFalseFalse
+28645Nail of the Heavens orchestrion rollNail of the Heavens orchestrion rollsNail of the Heavens Orchestrion RollFalseFalse
+28646Imperium orchestrion rollImperium orchestrion rollsImperium Orchestrion RollFalseFalse
+28647mask of Azuromasks of AzuroMask of AzuroFalseFalse
 28648irregular tomestone of soldieryirregular tomestones of soldieryIrregular Tomestone of SoldieryFalseFalse
 28649certificate of good cheercertificates of good cheerCertificate of Good CheerFalseFalse
 28650Valentione's Day chocolateValentione's Day chocolatesValentione's Day ChocolateFalseFalse
 28652dream Triad carddream Triad cardsDream Triad CardFalseFalse
-28653hobgoblin cardhobgoblin cardsHobgoblin CardFalseFalse
-28654porxie cardporxie cardsPorxie CardFalseFalse
-28655iguana cardiguana cardsIguana CardFalseFalse
+28653Hobgoblin cardHobgoblin cardsHobgoblin CardFalseFalse
+28654Porxie cardPorxie cardsPorxie CardFalseFalse
+28655Iguana cardIguana cardsIguana CardFalseFalse
 28656Nu Mou cardNu Mou cardsNu Mou CardFalseFalse
 28657Fuath cardFuath cardsFuath CardFalseFalse
 28658Leannan Sith cardLeannan Sith cardsLeannan Sith CardFalseFalse
@@ -27704,6 +27726,8 @@
 28887Invincible orchestrion rollInvincible orchestrion rollsInvincible Orchestrion RollFalseFalse
 28888The Grand Cosmos orchestrion rollThe Grand Cosmos orchestrion rollsThe Grand Cosmos Orchestrion RollFalseFalse
 28889The Garden's Gates orchestrion rollThe Garden's Gates orchestrion rollsThe Garden's Gates Orchestrion RollFalseFalse
+28890A Fierce Air Forceth orchestrion rollA Fierce Air Forceth orchestrion rollsA Fierce Air Forceth Orchestrion RollFalseFalse
+28891A Fine Air Forbiddeth orchestrion rollA Fine Air Forbiddeth orchestrion rollsA Fine Air Forbiddeth Orchestrion RollFalseFalse
 28892Starlight de Chocobo orchestrion rollStarlight de Chocobo orchestrion rollsStarlight de Chocobo Orchestrion RollFalseFalse
 28893Safety in Numbers orchestrion rollSafety in Numbers orchestrion rollsSafety in Numbers Orchestrion RollFalseFalse
 28894Significance orchestrion rollSignificance orchestrion rollsSignificance Orchestrion RollFalseFalse
@@ -27731,8 +27755,11 @@
 28917ufiti hornufiti hornsUfiti HornFalseFalse
 28918gentleman's Valentione rose chestgentleman's Valentione rose chestsGentleman's Valentione Rose ChestFalseFalse
 28919gentleman's Valentione acacia chestgentleman's Valentione acacia chestsGentleman's Valentione Acacia ChestFalseFalse
-28920gentleman's Valentione forget-me-not chestgentleman's Valentione forget-me-not chestsGentleman's Valentione Forget-Me-Not ChestFalseFalse
+28920gentleman's Valentione forget-me-not chestgentleman's Valentione forget-me-not chestsGentleman's Valentione Forget-me-not ChestFalseFalse
 28921lady's Valentione rose chestlady's Valentione rose chestsLady's Valentione Rose ChestFalseFalse
 28922lady's Valentione acacia chestlady's Valentione acacia chestsLady's Valentione Acacia ChestFalseFalse
-28923lady's Valentione forget-me-not chestlady's Valentione forget-me-not chestsLady's Valentione Forget-Me-Not ChestFalseFalse
+28923lady's Valentione forget-me-not chestlady's Valentione forget-me-not chestsLady's Valentione Forget-me-not ChestFalseFalse
 28924No.2 Type B materiel storage crateNo.2 Type B materiel storage cratesNo.2 Type B Materiel Storage CrateFalseFalse
+29980authentic Valentione lobster platterauthentic Valentione lobster plattersAuthentic Valentione Lobster PlatterFalseFalse
+29981authentic Valentione cake pairingauthentic Valentione cake pairingsAuthentic Valentione Cake PairingFalseFalse
+29982authentic stuffed mammetauthentic stuffed mammetsAuthentic Stuffed MammetFalseFalse
