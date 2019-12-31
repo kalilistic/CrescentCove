@@ -1,4 +1,4 @@
-﻿namespace CrescentCove.Model
+﻿namespace FFXIV.CrescentCove
 {
     public interface IItem
     {

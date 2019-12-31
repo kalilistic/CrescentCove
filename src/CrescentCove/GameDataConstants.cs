@@ -1,4 +1,4 @@
-﻿namespace CrescentCove
+﻿namespace FFXIV.CrescentCove
 {
     internal static class GameDataConstants
     {

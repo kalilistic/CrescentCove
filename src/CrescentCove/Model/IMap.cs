@@ -1,10 +1,10 @@
 ﻿namespace FFXIV.CrescentCove
 {
-    public interface IContentFinderCondition
+    public interface IMap
     {
         int Id { get; set; }
-        int TerritoryType { get; set; }
-        bool HighEndDuty { get; set; }
+        int MapPlaceNameId { get; set; }
+        int TerritoryTypeId { get; set; }
         void SetPropsByStr(string[] propertyStr);
     }
 }

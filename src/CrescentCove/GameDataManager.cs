@@ -1,6 +1,6 @@
-﻿using CrescentCove.Properties;
+﻿using FFXIV.CrescentCove.Properties;
 
-namespace CrescentCove
+namespace FFXIV.CrescentCove
 {
     public class GameDataManager : IGameDataManager
     {
@@ -8,5 +8,8 @@ namespace CrescentCove
         public string Item { get; } = Resources.Item;
         public string World { get; } = Resources.World;
         public string ContentFinderCondition { get; } = Resources.ContentFinderCondition;
+        public string TerritoryType { get; } = Resources.TerritoryType;
+        public string PlaceName { get; } = Resources.PlaceName;
+        public string Map { get; } = Resources.Map;
     }
 }

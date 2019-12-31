@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 using CrescentCove.Test.Properties;
 using NUnit.Framework;
 
-namespace CrescentCove.Test
+namespace FFXIV.CrescentCove.Test
 {
     [TestFixture]
     public class GameDataRepositoryTest
