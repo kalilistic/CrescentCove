@@ -146,7 +146,8 @@ def create_item_df(lang):
     df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
     df = df.drop([0, 0])
     df = remove_unused_cols(df, item_cols)
-    df["Plural"] = df["Singular"]
+    if lang == "ja":
+        df["Plural"] = df["Singular"]
     df["SingularKeyword"] = df["Singular"]
     df["PluralKeyword"] = df["Plural"]
     df["SingularREP"] = df["Singular"]
