@@ -22,7 +22,7 @@ namespace FFXIV.CrescentCove.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace FFXIV.CrescentCove.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("FFXIV.CrescentCove.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace FFXIV.CrescentCove.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -61,92 +61,58 @@ namespace FFXIV.CrescentCove.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 0adventurerADV30Adventurer0
-        ///1gladiatorGLA30Gladiator1
-        ///2pugilistPGL30Pugilist2
-        ///3marauderMRD30Marauder1
-        ///4lancerLNC30Lancer2
-        ///5archerARC30Archer3
-        ///6conjurerCNJ31Conjurer4
-        ///7thaumaturgeTHM31Thaumaturge3
-        ///8carpenterCRP33Carpenter0
-        ///9blacksmithBSM33Blacksmith0
-        ///10armorerARM33Armorer0
-        ///11goldsmithGSM33Goldsmith0
-        ///12leatherworkerLTW33Leatherworker0
-        ///13weaverWVR33Weaver0
-        ///14alchemistALC33Alchemist0
-        ///15culinarianCUL33Culinarian0
-        ///16m [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to 0300adventurerADVaventurierAVNAbenteurerABEすっぴん士ADV
+        ///1301gladiatorGLAgladiateurGLAGladiatorGLA剣術士GLA
+        ///2302pugilistPGLpugilistePGLFaustkämpferFST格闘士PGL
+        ///3301marauderMRDmaraudeurMRDMarodeurMAR斧術士MRD
+        ///4302lancerLNCmaître d&apos;hastHASPikenierPIK槍術士LNC
+        ///5303archerARCarcherARCWaldläuferWDL弓術士ARC
+        ///6314conjurerCNJélémentalisteÉLMDruideDRU幻術士CNJ
+        ///7313thaumaturgeTHMoccultisteOCCThaumaturgTHM呪術士THM
+        ///8330carpenterCRPmenuisierMENZimmerer [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string ClassJob {
+        public static string ClassJob {
             get {
                 return ResourceManager.GetString("ClassJob", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 00False
-        ///1169False
-        ///2164False
-        ///3161False
-        ///4157False
-        ///5172False
-        ///6166False
-        ///7162False
-        ///8158False
-        ///9163False
-        ///10159False
-        ///11168False
-        ///12170False
-        ///13171False
-        ///14167False
-        ///15217False
-        ///16224False
-        ///17160False
-        ///18349False
-        ///19350False
-        ///20362False
-        ///21360False
-        ///22363False
-        ///23361False
-        ///24373False
-        ///25365False
-        ///26367False
-        ///27371False
-        ///28387False
-        ///29189False
-        ///30188False
-        ///31416False
-        ///32150False
-        ///33420False
-        ///34421False
-        ///35430False
-        ///36434False
-        ///37441 [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to 1169Falsethe Thousand Maws of Toto–Rakles Mille Gueules de Toto-RakTausend Löcher von Toto-Rak監獄廃墟 トトラクの千獄
+        ///2164Falsethe Tam–Tara Deepcroftl&apos;Hypogée de Tam-TaraTotenacker Tam-Tara地下霊殿 タムタラの墓所
+        ///3161FalseCopperbell Minesles Mines de ClochecuivreKupferglocken-Mine封鎖坑道 カッパーベル銅山
+        ///4157FalseSastashaSastashaSastasha天然要害 サスタシャ浸食洞
+        ///5172Falsethe Aurum Valele Val d&apos;AurumGoldklamm霧中行軍 オーラムヴェイル
+        ///6166FalseHaukke Manorle Manoir des HaukkeHaukke-Herrenhaus名門屋敷 ハウケタ御用邸
+        ///7162FalseHalatal [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string ContentFinderCondition {
+        public static string ContentFinderCondition {
             get {
                 return ResourceManager.GetString("ContentFinderCondition", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 1gilgilGilTrueFalse
-        ///2fire shardfire shardsFire ShardTrueFalse
-        ///3ice shardice shardsIce ShardTrueFalse
-        ///4wind shardwind shardsWind ShardTrueFalse
-        ///5earth shardearth shardsEarth ShardTrueFalse
-        ///6lightning shardlightning shardsLightning ShardTrueFalse
-        ///7water shardwater shardsWater ShardTrueFalse
-        ///8fire crystalfire crystalsFire CrystalTrueFalse
-        ///9ice crystalice crystalsIce CrystalTrueFalse
-        ///10wind crystalwind crystalsWind CrystalTrueFalse
-        ///11earth crystalear [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to 1gilgilGil^gil^gilgilgilsGil^gil^gilsGilGilGil^Gil^Gilギルギル^ギル^nanTrueFalse
+        ///2fire shardfire shardsFire Shard^fire shard^fire shardséclat de feuéclats de feuÉclat de feu^éclat de feu^éclats de feuFeuerscherbeFeuerscherbenFeuerscherbe^Feuerscherbe^Feuerscherbenファイアシャードファイアシャード^ファイアシャード^nanTrueFalse
+        ///3ice shardice shardsIce Shard^ice shard^ice shardséclat de glaceéclats de glaceÉclat de glace^éclat de glace^éclats de glaceEisscherbeEisscherbenEisscherbe [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Item {
+        public static string Item {
             get {
                 return ResourceManager.GetString("Item", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1Englishen
+        ///2Frenchfr
+        ///3Germande
+        ///4Japaneseja
+        ///.
+        /// </summary>
+        public static string Language {
+            get {
+                return ResourceManager.GetString("Language", resourceCulture);
             }
         }
         
@@ -203,57 +169,26 @@ namespace FFXIV.CrescentCove.Properties {
         ///49873167
         ///5092217 [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Map {
+        public static string Map {
             get {
                 return ResourceManager.GetString("Map", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 0
-        ///1
-        ///2
-        ///3
-        ///4
-        ///5
-        ///6
-        ///7
-        ///8
-        ///9
-        ///10
-        ///11
-        ///12
-        ///13
-        ///14
-        ///15
-        ///16
-        ///17
-        ///18Levemete
-        ///19
-        ///20Hydaelyn
-        ///21Eorzea
-        ///22La Noscea
-        ///23The Black Shroud
-        ///24Thanalan
-        ///25Coerthas
-        ///26Mor Dhona
-        ///27Limsa Lominsa
-        ///28Limsa Lominsa Upper Decks
-        ///29Limsa Lominsa Lower Decks
-        ///30Middle La Noscea
-        ///31Lower La Noscea
-        ///32Eastern La Noscea
-        ///33Western La Noscea
-        ///34Upper La Noscea
-        ///35Sastasha
-        ///36Brayflox&apos;s Longstop
-        ///37The Wanderer&apos;s Palace
-        ///38
-        ///39Gridania
-        ///40Ul&apos;dah - Steps of Nald
-        ///41Ul&apos;dah - Steps of Tha [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to 18LevemeteMandatFreibriefギルドリーヴ
+        ///20HydaelynHydaelynHydaelynハイデリン
+        ///21EorzeaÉorzéaEorzeaエオルゼア
+        ///22La NosceaNosceaLa Nosceaラノシア
+        ///23The Black ShroudForêt de SombrelinceulFinsterwald黒衣森
+        ///24ThanalanThanalanThanalanザナラーン
+        ///25CoerthasCoerthasCoerthasクルザス
+        ///26Mor DhonaMor DhonaMor Dhonaモードゥナ
+        ///27Limsa LominsaLimsa LominsaLimsa Lominsaリムサ・ロミンサ
+        ///28Limsa Lominsa Upper DecksLimsa Lominsa - Le TillacObere Decksリムサ・ロミンサ：上甲板層
+        ///29Limsa Lominsa Lower DecksLimsa Lominsa - L&apos;EntrepontUnte [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string PlaceName {
+        public static string PlaceName {
             get {
                 return ResourceManager.GetString("PlaceName", resourceCulture);
             }
@@ -300,7 +235,7 @@ namespace FFXIV.CrescentCove.Properties {
         ///138225023318
         /// [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string TerritoryType {
+        public static string TerritoryType {
             get {
                 return ResourceManager.GetString("TerritoryType", resourceCulture);
             }
@@ -352,7 +287,7 @@ namespace FFXIV.CrescentCove.Properties {
         ///65Midgardsormr
         ///66 [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string World {
+        public static string World {
             get {
                 return ResourceManager.GetString("World", resourceCulture);
             }

@@ -37,37 +37,50 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\TerritoryType.cs" />
-    <Compile Include="Model\PlaceName.cs" />
-    <Compile Include="Model\Map.cs" />
-    <Compile Include="Model\ClassJob.cs" />
-    <Compile Include="Model\ContentFinderCondition.cs" />
+    <Compile Include="Model\ClassJob\ClassJobLocalized.cs" />
+    <Compile Include="Model\ClassJob\IClassJobLocalized.cs" />
+    <Compile Include="Model\ContentFinderCondition\ContentFinderConditionLocalized.cs" />
+    <Compile Include="Model\ContentFinderCondition\IContentFinderConditionLocalized.cs" />
+    <Compile Include="Model\ILocalizedData.cs" />
+    <Compile Include="Model\Item\ItemLocalized.cs" />
+    <Compile Include="Model\Item\IItemLocalized.cs" />
+    <Compile Include="Model\LanguageEnum.cs" />
+    <Compile Include="Model\Language\ILanguage.cs" />
+    <Compile Include="Model\Language\Language.cs" />
+    <Compile Include="Model\PlaceName\PlaceNameLocalized.cs" />
+    <Compile Include="Model\PlaceName\IPlaceNameLocalized.cs" />
+    <Compile Include="Model\TerritoryType\TerritoryType.cs" />
+    <Compile Include="Model\PlaceName\PlaceName.cs" />
+    <Compile Include="Model\Map\Map.cs" />
+    <Compile Include="Model\ClassJob\ClassJob.cs" />
+    <Compile Include="Model\ContentFinderCondition\ContentFinderCondition.cs" />
     <Compile Include="GameDataConstants.cs" />
     <Compile Include="GameDataManager.cs" />
     <Compile Include="GameDataRepository.cs" />
-    <Compile Include="Model\IClassJob.cs" />
+    <Compile Include="Model\ClassJob\IClassJob.cs" />
     <Compile Include="IGameDataManager.cs" />
     <Compile Include="IGameDataRepository.cs" />
-    <Compile Include="Model\IContentFinderCondition.cs" />
+    <Compile Include="Model\ContentFinderCondition\IContentFinderCondition.cs" />
     <Compile Include="Model\IGameData.cs" />
-    <Compile Include="Model\IItem.cs" />
-    <Compile Include="Model\IPlaceName.cs" />
-    <Compile Include="Model\Item.cs" />
-    <Compile Include="Model\IMap.cs" />
-    <Compile Include="Model\ITerritoryType.cs" />
-    <Compile Include="Model\IWorld.cs" />
+    <Compile Include="Model\Item\IItem.cs" />
+    <Compile Include="Model\PlaceName\IPlaceName.cs" />
+    <Compile Include="Model\Item\Item.cs" />
+    <Compile Include="Model\Map\IMap.cs" />
+    <Compile Include="Model\TerritoryType\ITerritoryType.cs" />
+    <Compile Include="Model\World\IWorld.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Model\World.cs" />
+    <Compile Include="Model\World\World.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\ClassJob.csv" />
     <None Include="Properties\ContentFinderCondition.csv" />
     <None Include="Properties\Item.csv" />
+    <None Include="Properties\Language.csv" />
     <None Include="Properties\Map.csv" />
     <None Include="Properties\PlaceName.csv" />
     <None Include="Properties\TerritoryType.csv" />
@@ -75,7 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>

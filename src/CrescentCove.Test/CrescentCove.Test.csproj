@@ -42,9 +42,10 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameDataMock.cs" />
+    <Compile Include="GameDataLocalizedMock.cs" />
     <Compile Include="GameDataManagerTest.cs" />
     <Compile Include="GameDataRepositoryTest.cs" />
-    <Compile Include="GameDataMock.cs" />
     <Compile Include="Properties\Resources.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -24,38 +24,46 @@ REM UPDATE SAINT COINACH.
 	cd %SAINT_COINACH_DIR%
 	git checkout .
 	git pull origin
-	GOTO BUILD
+	GOTO GENERATE_RAW
 		
 REM INSTALL SAINT COINACH.
 :INSTALL
 	git clone https://github.com/ufx/SaintCoinach.git
 	cd %SAINT_COINACH_DIR%
-	GOTO BUILD
-
-REM BUILD SAINT COINACH.
-:BUILD
-	RMDIR /s /q %SAINT_COINACH_DIR%\SaintCoinach.Cmd\bin\Release
+	GOTO GENERATE_RAW
+	
+:GENERATE_RAW
 	RMDIR /s /q %EXTRACTS_DIR%\
-	CD %TOOLS_DIR%
-	NUGET.EXE RESTORE ../SAINTCOINACH/SAINTCOINACH.SLN
-	cd %SAINT_COINACH_DIR%
-	%DEVENV% .\SAINTCOINACH.SLN /Rebuild %CONFIGURATION%
-	GOTO EXTRACT
+	CALL :GENERATE_RAW_LANG "English" "en"
+	CALL :GENERATE_RAW_LANG "German" "de"
+	CALL :GENERATE_RAW_LANG "French" "fr"
+	CALL :GENERATE_RAW_LANG "Japanese" "ja"
+	GOTO PARSE
 	
 REM GENERATE RAW DATA FILES.
-:EXTRACT
+:GENERATE_RAW_LANG
+	CALL :BUILD %~2
 	CD /D %SAINT_COINACH_DIR%\SaintCoinach.Cmd\bin\Release
-	SaintCoinach.Cmd %FFXIV_DIR% rawexd
+	SaintCoinach.Cmd %FFXIV_DIR% "lang %~1" rawexd 
 	MOVE ./Definitions ../Definitions
 	for /F "tokens=*" %%x in ('dir /ad /b') do (set OUTPUT_DIR=%%x)
 	MOVE ../Definitions ./Definitions
-	xcopy %OUTPUT_DIR%\rawexd %EXTRACTS_DIR%\ /E
-	GOTO PARSE
-
+	xcopy %OUTPUT_DIR%\rawexd %EXTRACTS_DIR%\%~2\ /E
+	EXIT /B 0
+	
+REM BUILD SAINT COINACH.
+:BUILD
+	CD %TOOLS_DIR%
+	RMDIR /s /q %SAINT_COINACH_DIR%\SaintCoinach.Cmd\bin\Release
+	RMDIR /s /q %EXTRACTS_DIR%\%~1
+	NUGET.EXE RESTORE ../SAINTCOINACH/SAINTCOINACH.SLN
+	cd %SAINT_COINACH_DIR%
+	%DEVENV% .\SAINTCOINACH.SLN /Rebuild %CONFIGURATION%
+	EXIT /B 0
 REM CREATE PROPERTY FILES FROM EXTRACTS.
+
 :PARSE
 	CD /D %GAME_DATA_DIR%
 	python transform-saint-coinach.py
 
 pause
-

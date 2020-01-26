@@ -21,12 +21,17 @@ Small .NET framework library to reference FFXIV Game Data from Saint Coinach ext
 
 * Reference game data through repository pattern.
 * Handles saint coinach extract and transformation.
+* Supports English, French, German, and Japanese.
 
 ## Data Models
 
 * ClassJob
 * ContentFinderCondition
 * Item
+* Language
+* Map
+* PlaceName
+* TerritoryType
 * World
 
 ## How To Install
@@ -46,42 +51,6 @@ var worldRepository = new GameDataRepository<CrescentCove.World>(gameDataManager
 var world = worldRepository.GetById(12);
 var worldName = world.Name;
 ```
-
-## Considerations
-
-* This has a limited data set for now as I've only added what I needed for my own use cases.
-* I'd be happy to accept PRs or take requests to add more data if needed.
-
-## How To Update for Patch
-
-### 1. Set variables in game-data-config.bat.
-
-```shell
-SET DEVENV="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.com"
-SET FFXIV_DIR="C:/games/FINAL FANTASY XIV Online"
-SET GAME_DATA_DIR="C:\workspaces\CrescentCove"
-```
-
-### 2. Update game data in local from command line.
-
-```shell
-cd CrescentCove
-build.ps1
-update-game-data.bat
-```
-
-### 3. Push changes to GitHub.
-
-```shell
-git checkout -b patch-5.1
-git add .\src\CrescentCove\Properties\*
-git commit -m "update for patch 5.1"
-git push --set-upstream origin patch-5.1
-```
-
-### 4. Create PR to merge into master.
-
-* <a href="https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request">Create a Pull Request</a>
 
 ## Software Used
 
