@@ -146,13 +146,13 @@ def create_item_df(lang):
     df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
     df = df.drop([0, 0])
     df = remove_unused_cols(df, item_cols)
-    if lang == "ja":
-        df["Plural"] = df["Singular"]
-    df["SingularKeyword"] = df["Singular"]
-    df["PluralKeyword"] = df["Plural"]
-    df["SingularREP"] = df["Singular"]
-    df["PluralREP"] = df["Plural"]
+    df["SingularKeyword"] = ""
+    df["PluralKeyword"] = ""
+    df["SingularREP"] = ""
+    df["PluralREP"] = ""
     if lang == "en":
+        df["SingularKeyword"] = df["Singular"]
+        df["PluralKeyword"] = df["Plural"]
         df.loc[(df["SingularKeyword"].str.startswith("the ")), "SingularKeyword"] = df[
             "SingularKeyword"
         ].replace({"^the ": ""}, regex=True)
@@ -171,30 +171,9 @@ def create_item_df(lang):
         df.loc[(df["PluralKeyword"].str.startswith("a ")), "PluralKeyword"] = df[
             "PluralKeyword"
         ].replace({"^a ": ""}, regex=True)
-        df.loc[(df["SingularREP"].str.startswith("the ")), "SingularREP"] = df[
-            "SingularREP"
-        ].replace({"^the ": "(?:the )?"}, regex=True)
-        df.loc[(df["SingularREP"].str.startswith("an ")), "SingularREP"] = df[
-            "SingularREP"
-        ].replace({"^an ": "(?:an )?"}, regex=True)
-        df.loc[(df["SingularREP"].str.startswith("a ")), "SingularREP"] = df[
-            "SingularREP"
-        ].replace({"^a ": "(?:a )?"}, regex=True)
-        df.loc[(df["PluralREP"].str.startswith("the ")), "PluralREP"] = df[
-            "PluralREP"
-        ].replace({"^the ": "(?:the )?"}, regex=True)
-        df.loc[(df["PluralREP"].str.startswith("an ")), "PluralREP"] = df[
-            "PluralREP"
-        ].replace({"^an ": "(?:an )?"}, regex=True)
-        df.loc[(df["PluralREP"].str.startswith("a ")), "PluralREP"] = df[
-            "PluralREP"
-        ].replace({"^a ": "(?:a )?"}, regex=True)
-        df["SingularREP"] = "^" + df["SingularREP"].astype(str) + "$"
-        df["PluralREP"] = "^" + df["PluralREP"].astype(str) + "$"
-    elif lang == "fr":
-        df["SingularREP"] = "^" + df["SingularREP"].astype(str) + "$"
-        df["PluralREP"] = "^" + df["PluralREP"].astype(str) + "$"
     elif lang == "de":
+        df["SingularREP"] = df["Singular"]
+        df["PluralREP"] = df["Plural"]
         df["Singular"] = df["Singular"].replace({"\[a\]": ""}, regex=True)
         df["Singular"] = df["Singular"].replace({"\[t\]": ""}, regex=True)
         df["Singular"] = df["Singular"].replace({"\[p\]": ""}, regex=True)
@@ -217,9 +196,6 @@ def create_item_df(lang):
         )
         df["PluralREP"] = df["PluralREP"].replace({"\[p\]": ""}, regex=True)
         df["PluralREP"] = df["PluralREP"].replace({"\[p ": ""}, regex=True)
-        df["SingularREP"] = "^" + df["SingularREP"].astype(str) + "$"
-        df["PluralREP"] = "^" + df["PluralREP"].astype(str) + "$"
-    elif lang == "ja":
         df["SingularREP"] = "^" + df["SingularREP"].astype(str) + "$"
         df["PluralREP"] = "^" + df["PluralREP"].astype(str) + "$"
     df = df.rename(columns={"Singular": "Singular{" + lang + "}"})
