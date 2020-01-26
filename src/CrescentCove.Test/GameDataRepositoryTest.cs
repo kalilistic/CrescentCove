@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using CrescentCove.Test.Properties;
@@ -39,12 +38,6 @@ namespace FFXIV.CrescentCove.Test
 			Assert.AreEqual("L'Éveil d'Éden - Inhumation (sadique)", gameDataMockList[0].Localized[1].Name);
 			Assert.AreEqual("Edens Erwachen - Beerdigung (episch)", gameDataMockList[0].Localized[2].Name);
 			Assert.AreEqual("希望の園エデン零式：覚醒編4", gameDataMockList[0].Localized[3].Name);
-			using (var writer = new StreamWriter("C:\\Users\\caleb\\Desktop\\logger.txt", false))
-			{
-				//byte[] bytes = Encoding.GetEncoding(1252).GetBytes(result);
-				// var nameFixed = Encoding.UTF8.GetString(bytes);
-				writer.WriteLine(gameDataMockList[0].Localized[1].Name);
-			}
 		}
 
 		[Test]
