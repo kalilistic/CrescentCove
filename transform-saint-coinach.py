@@ -1,5 +1,17 @@
 #!/usr/bin/env python
 import pandas as pd
+import warnings
+
+# Suppress Warnings
+warnings.simplefilter(action="ignore", category=FutureWarning)
+
+# General Variables
+sep = "\x01"
+src_dir = "./SaintCoinachExtracts/"
+dest_dir = "./src/CrescentCove/Properties/"
+property_ext = ".csv"
+primary_lang = "en"
+addl_langs = ["fr", "de", "ja"]
 
 # Extract File Names
 class_job_file_name = "ClassJob"
@@ -9,30 +21,36 @@ content_finder_condition_file_name = "ContentFinderCondition"
 territory_type_file_name = "TerritoryType"
 place_name_file_name = "PlaceName"
 map_file_name = "Map"
+language_file_name = "Language"
+
+# Destination File Paths
+class_job_dest = dest_dir + class_job_file_name + property_ext
+world_dest = dest_dir + world_file_name + property_ext
+item_dest = dest_dir + item_file_name + property_ext
+content_finder_condition_dest = (
+    dest_dir + content_finder_condition_file_name + property_ext
+)
+territory_type_dest = dest_dir + territory_type_file_name + property_ext
+place_name_dest = dest_dir + place_name_file_name + property_ext
+map_dest = dest_dir + map_file_name + property_ext
+language_dest = dest_dir + language_file_name + property_ext
 
 # Extract Columns
-class_job_cols = [
-    'Key',
-    'Name',
-    'Abbreviation',
-    'ClassJobCategory',
-    'Name{English}',
-    'Role']
-world_cols = ['Key', 'Name']
-item_cols = ['Key', 'Singular', 'Plural', 'Name']
-content_finder_condition_cols = ['Key', 'TerritoryType', 'Name', 'HighEndDuty']
-territory_type_cols = ['Key', 'PlaceName{Region}', 'PlaceName{Zone}', 'PlaceName', 'Map']
-place_name_cols = ['Key', 'Name']
-map_cols = ['Key', 'PlaceName{Sub}', 'TerritoryType']
+class_job_cols = ["Key", "ClassJobCategory", "Role", "Name", "Abbreviation"]
+world_cols = ["Key", "Name"]
+item_cols = ["Key", "Singular", "Plural", "Name"]
+content_finder_condition_cols = ["Key", "TerritoryType", "HighEndDuty", "Name"]
+territory_type_cols = [
+    "Key",
+    "PlaceName{Region}",
+    "PlaceName{Zone}",
+    "PlaceName",
+    "Map",
+]
+place_name_cols = ["Key", "Name"]
+map_cols = ["Key", "PlaceName{Sub}", "TerritoryType"]
 
-# Other Variables
-sep = "\x01"
-src_dir = "./SaintCoinachExtracts/"
-dest_dir = "./src/CrescentCove/Properties/"
-property_ext = ".csv"
-
-
-# Helper Functions
+# Common Functions
 def remove_dummy_headers(file_src, file_dest):
     df = pd.read_csv(file_src, low_memory=False)
     df = df.drop([1, 1])
@@ -55,120 +73,192 @@ def write_transformed_csv(df, file_name):
     df.to_csv(file_name, sep=sep, header=False, index=False)
 
 
-# Transform Functions
+def merge_df_exclude_dupes(df1, df2):
+    df = df1.merge(df2, on="Key", how="outer", suffixes=("", "_dupe"))
+    df = df.drop(list(df.filter(regex="_dupe$")), axis=1)
+    return df
+
+
+def remove_placeholders(df):
+    df = df.replace({"<Emphasis>": ""}, regex=True)
+    df = df.replace({"</Emphasis>": ""}, regex=True)
+    df = df.replace({"<Emphasis/>": ""}, regex=True)
+    df = df.replace({"<Indent>": ""}, regex=True)
+    df = df.replace({"</Indent>": ""}, regex=True)
+    df = df.replace({"<Indent/>": ""}, regex=True)
+    df = df.replace({"<SoftHyphen>": ""}, regex=True)
+    df = df.replace({"</SoftHyphen>": ""}, regex=True)
+    df = df.replace({"<SoftHyphen/>": ""}, regex=True)
+    return df
+
+
 def transform_class_job():
-    class_job_src = src_dir + class_job_file_name + property_ext
-    class_job_dest = dest_dir + class_job_file_name + property_ext
+    df = create_class_job_df(primary_lang)
+    for lang in addl_langs:
+        addl_df = create_class_job_df(lang)
+        df = merge_df_exclude_dupes(df, addl_df)
+    write_transformed_csv(df, class_job_dest)
+
+
+def create_class_job_df(lang):
+    class_job_src = src_dir + lang + "/" + class_job_file_name + property_ext
     remove_dummy_headers(class_job_src, class_job_dest)
     df = read_csv(class_job_dest)
     df = rename_key_col(df)
     df = remove_unused_cols(df, class_job_cols)
-    write_transformed_csv(df, class_job_dest)
+    df = df.rename(columns={"Name": "Name{" + lang + "}"})
+    df = df.rename(columns={"Abbreviation": "Abbreviation{" + lang + "}"})
+    return df
 
 
 def transform_world():
-    world_src = src_dir + world_file_name + property_ext
-    world_dest = dest_dir + world_file_name + property_ext
+    world_src = src_dir + primary_lang + "/" + world_file_name + property_ext
     remove_dummy_headers(world_src, world_dest)
     df = read_csv(world_dest)
     df = rename_key_col(df)
-    df = df[df['IsPublic']]
+    df = df[df["IsPublic"]]
     df = remove_unused_cols(df, world_cols)
     write_transformed_csv(df, world_dest)
 
 
 def transform_item():
-    item_src = src_dir + item_file_name + property_ext
-    item_dest = dest_dir + item_file_name + property_ext
-    remove_dummy_headers(item_src, item_dest)
-    df = read_csv(item_dest)
-    df = rename_key_col(df)
-
-    # remove rows with empty cols
-    df = df[df['Singular'] != '']
-    df = df[df['Plural'] != '']
-    df = df[df['Name'] != '']
-
-    # remove dupes
-    df = df.drop_duplicates(['Singular', 'Plural', 'Name'])
-
-    # remove emphasis tags
-    df = df.replace({'<Emphasis>': ''}, regex=True)
-    df = df.replace({'</Emphasis>': ''}, regex=True)
-
-    # drop bad record with id 0
-    df = df.drop([0, 0])
-
-    # remove unused columns
-    df = remove_unused_cols(df, item_cols)
-
-    # add isCommon column
-    common_list = [
-        'Gil',
-        'MGP',
-        'Wolf Mark',
-        'Flame Seal',
-        'Serpent Seal',
-        'Storm Seal',
-        'Allied Seal',
-        'Fire Shard',
-        'Ice Shard',
-        'Wind Shard',
-        'Earth Shard',
-        'Lightning Shard',
-        'Water Shard',
-        'Fire Cluster',
-        'Ice Cluster',
-        'Wind Cluster',
-        'Earth Cluster',
-        'Lightning Cluster',
-        'Water Cluster']
-    common_list_pattern = [
-        'Allagan Tomestone of',
-        'Fire Crystal',
-        'Ice Crystal',
-        'Wind Crystal',
-        'Earth Crystal',
-        'Lightning Crystal',
-        'Water Crystal']
-    df = df.assign(isCommon=(df[df.columns[3]].str.contains(
-        '|'.join(common_list_pattern))) | (df[df.columns[3]].isin(common_list)))
-
-    # add isRetired items
-    retired_list = [
-        'Allagan Tomestone of Creation',
-        'Allagan Tomestone of Verity',
-        'Allagan Tomestone of Scripture',
-        'Allagan Tomestone of Lore',
-        'Allagan Tomestone of Esoterics',
-        'Allagan Tomestone of Law',
-        'Allagan Tomestone of Soldiery',
-        'Allagan Tomestone of Mythology',
-        'Allagan Tomestone of Philosophy']
-    df = df.assign(isRetired=(df[df.columns[3]].isin(retired_list)))
-
-    # write transformed csv
+    df = create_item_df(primary_lang)
+    for lang in addl_langs:
+        addl_df = create_item_df(lang)
+        df = merge_df_exclude_dupes(df, addl_df)
+    item_custom_data = pd.read_csv("./custom-data/Item.csv")
+    df = merge_df_exclude_dupes(df, item_custom_data)
+    df = df.fillna({"IsCommon": False, "IsRetired": False})
+    df = df.sort_values(by=["IsCommon", "Key"], ascending=[False, False])
     write_transformed_csv(df, item_dest)
 
 
-def transform_content_finder_condition():
-    content_finder_condition_src = src_dir + content_finder_condition_file_name + property_ext
-    content_finder_condition_dest = dest_dir + content_finder_condition_file_name + property_ext
-    remove_dummy_headers(content_finder_condition_src, content_finder_condition_dest)
-    df = read_csv(content_finder_condition_dest)
+def create_item_df(lang):
+    item_src = src_dir + lang + "/" + item_file_name + property_ext
+    remove_dummy_headers(item_src, item_dest)
+    df = read_csv(item_dest)
     df = rename_key_col(df)
-    df['HighEndDuty'] = df['HighEndDuty'].astype(str)
-    df = df[df['Name'] != '']
-    df = df[df['Name'].notnull()]
-    df = df.replace({'<Emphasis>': ''}, regex=True)
-    df = df.replace({'</Emphasis>': ''}, regex=True)
-    df = remove_unused_cols(df, content_finder_condition_cols)
+    df = df[df["Singular"] != ""]
+    df = df[df["Plural"] != ""]
+    df = df[df["Name"] != ""]
+    df = df.drop_duplicates(["Singular", "Plural", "Name"])
+    df = remove_placeholders(df)
+    df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
+    df = df.drop([0, 0])
+    df = remove_unused_cols(df, item_cols)
+    df["Plural"] = df["Singular"]
+    df["SingularKeyword"] = df["Singular"]
+    df["PluralKeyword"] = df["Plural"]
+    df["SingularREP"] = df["Singular"]
+    df["PluralREP"] = df["Plural"]
+    if lang == "en":
+        df.loc[(df["SingularKeyword"].str.startswith("the ")), "SingularKeyword"] = df[
+            "SingularKeyword"
+        ].replace({"^the ": ""}, regex=True)
+        df.loc[(df["SingularKeyword"].str.startswith("an ")), "SingularKeyword"] = df[
+            "SingularKeyword"
+        ].replace({"^an ": ""}, regex=True)
+        df.loc[(df["SingularKeyword"].str.startswith("a ")), "SingularKeyword"] = df[
+            "SingularKeyword"
+        ].replace({"^a ": ""}, regex=True)
+        df.loc[(df["PluralKeyword"].str.startswith("the ")), "PluralKeyword"] = df[
+            "PluralKeyword"
+        ].replace({"^the ": ""}, regex=True)
+        df.loc[(df["PluralKeyword"].str.startswith("an ")), "PluralKeyword"] = df[
+            "PluralKeyword"
+        ].replace({"^an ": "?"}, regex=True)
+        df.loc[(df["PluralKeyword"].str.startswith("a ")), "PluralKeyword"] = df[
+            "PluralKeyword"
+        ].replace({"^a ": ""}, regex=True)
+        df.loc[(df["SingularREP"].str.startswith("the ")), "SingularREP"] = df[
+            "SingularREP"
+        ].replace({"^the ": "(?:the )?"}, regex=True)
+        df.loc[(df["SingularREP"].str.startswith("an ")), "SingularREP"] = df[
+            "SingularREP"
+        ].replace({"^an ": "(?:an )?"}, regex=True)
+        df.loc[(df["SingularREP"].str.startswith("a ")), "SingularREP"] = df[
+            "SingularREP"
+        ].replace({"^a ": "(?:a )?"}, regex=True)
+        df.loc[(df["PluralREP"].str.startswith("the ")), "PluralREP"] = df[
+            "PluralREP"
+        ].replace({"^the ": "(?:the )?"}, regex=True)
+        df.loc[(df["PluralREP"].str.startswith("an ")), "PluralREP"] = df[
+            "PluralREP"
+        ].replace({"^an ": "(?:an )?"}, regex=True)
+        df.loc[(df["PluralREP"].str.startswith("a ")), "PluralREP"] = df[
+            "PluralREP"
+        ].replace({"^a ": "(?:a )?"}, regex=True)
+        df["SingularREP"] = "^" + df["SingularREP"].astype(str) + "$"
+        df["PluralREP"] = "^" + df["PluralREP"].astype(str) + "$"
+    elif lang == "fr":
+        df["SingularREP"] = "^" + df["SingularREP"].astype(str) + "$"
+        df["PluralREP"] = "^" + df["PluralREP"].astype(str) + "$"
+    elif lang == "de":
+        df["Singular"] = df["Singular"].replace({"\[a\]": ""}, regex=True)
+        df["Singular"] = df["Singular"].replace({"\[t\]": ""}, regex=True)
+        df["Singular"] = df["Singular"].replace({"\[p\]": ""}, regex=True)
+        df["Plural"] = df["Plural"].replace({"\[a\]": ""}, regex=True)
+        df["Plural"] = df["Plural"].replace({"\[t\]": ""}, regex=True)
+        df["Plural"] = df["Plural"].replace({"\[p\]": ""}, regex=True)
+        df["Plural"] = df["Plural"].replace({"\[p ": ""}, regex=True)
+        df["SingularREP"] = df["SingularREP"].replace(
+            {"\[a\]": "(?:e|er|es|en)?"}, regex=True
+        )
+        df["SingularREP"] = df["SingularREP"].replace(
+            {"\[t\]": "(?:der|die|das)?"}, regex=True
+        )
+        df["SingularREP"] = df["SingularREP"].replace({"\[p\]": ""}, regex=True)
+        df["PluralREP"] = df["PluralREP"].replace(
+            {"\[a\]": "(?:e|er|es|en)?"}, regex=True
+        )
+        df["PluralREP"] = df["PluralREP"].replace(
+            {"\[t\]": "(?:der|die|das)?"}, regex=True
+        )
+        df["PluralREP"] = df["PluralREP"].replace({"\[p\]": ""}, regex=True)
+        df["PluralREP"] = df["PluralREP"].replace({"\[p ": ""}, regex=True)
+        df["SingularREP"] = "^" + df["SingularREP"].astype(str) + "$"
+        df["PluralREP"] = "^" + df["PluralREP"].astype(str) + "$"
+    elif lang == "ja":
+        df["SingularREP"] = "^" + df["SingularREP"].astype(str) + "$"
+        df["PluralREP"] = "^" + df["PluralREP"].astype(str) + "$"
+    df = df.rename(columns={"Singular": "Singular{" + lang + "}"})
+    df = df.rename(columns={"Plural": "Plural{" + lang + "}"})
+    df = df.rename(columns={"Name": "Name{" + lang + "}"})
+    df = df.rename(columns={"SingularKeyword": "SingularKeyword{" + lang + "}"})
+    df = df.rename(columns={"PluralKeyword": "PluralKeyword{" + lang + "}"})
+    df = df.rename(columns={"SingularREP": "SingularREP{" + lang + "}"})
+    df = df.rename(columns={"PluralREP": "PluralREP{" + lang + "}"})
+    return df
+
+
+def transform_content_finder_condition():
+    df = create_content_finder_condition_df(primary_lang)
+    for lang in addl_langs:
+        addl_df = create_content_finder_condition_df(lang)
+        df = merge_df_exclude_dupes(df, addl_df)
     write_transformed_csv(df, content_finder_condition_dest)
 
 
+def create_content_finder_condition_df(lang):
+    content_finder_condition_src = (
+        src_dir + lang + "/" + content_finder_condition_file_name + property_ext
+    )
+    remove_dummy_headers(content_finder_condition_src, content_finder_condition_dest)
+    df = read_csv(content_finder_condition_dest)
+    df = rename_key_col(df)
+    df["HighEndDuty"] = df["HighEndDuty"].astype(str)
+    df = df[df["Name"] != ""]
+    df = df[df["Name"].notnull()]
+    df = remove_placeholders(df)
+    df = remove_unused_cols(df, content_finder_condition_cols)
+    df = df.rename(columns={"Name": "Name{" + lang + "}"})
+    return df
+
+
 def transform_territory_type():
-    territory_type_src = src_dir + territory_type_file_name + property_ext
-    territory_type_dest = dest_dir + territory_type_file_name + property_ext
+    territory_type_src = (
+        src_dir + primary_lang + "/" + territory_type_file_name + property_ext
+    )
     remove_dummy_headers(territory_type_src, territory_type_dest)
     df = read_csv(territory_type_dest)
     df = rename_key_col(df)
@@ -177,26 +267,38 @@ def transform_territory_type():
 
 
 def transform_place_name():
-    place_name_src = src_dir + place_name_file_name + property_ext
-    place_name_dest = dest_dir + place_name_file_name + property_ext
-    remove_dummy_headers(place_name_src, place_name_dest)
-    df = read_csv(place_name_dest)
-    df = rename_key_col(df)
-    df = df[df['Name'] != '']
-    df = df[df['Name'].notnull()]
-    df = df[df['Name'] != '???']
-    df = remove_unused_cols(df, place_name_cols)
+    df = create_place_name_df(primary_lang)
+    for lang in addl_langs:
+        addl_df = create_place_name_df(lang)
+        df = merge_df_exclude_dupes(df, addl_df)
     write_transformed_csv(df, place_name_dest)
 
 
+def create_place_name_df(lang):
+    place_name_src = src_dir + lang + "/" + place_name_file_name + property_ext
+    remove_dummy_headers(place_name_src, place_name_dest)
+    df = read_csv(place_name_dest)
+    df = rename_key_col(df)
+    df = df[df["Name"] != ""]
+    df = df[df["Name"].notnull()]
+    df = df[df["Name"] != "???"]
+    df = remove_unused_cols(df, place_name_cols)
+    df = df.rename(columns={"Name": "Name{" + lang + "}"})
+    return df
+
+
 def transform_map():
-    map_src = src_dir + map_file_name + property_ext
-    map_dest = dest_dir + map_file_name + property_ext
+    map_src = src_dir + primary_lang + "/" + map_file_name + property_ext
     remove_dummy_headers(map_src, map_dest)
     df = read_csv(map_dest)
     df = rename_key_col(df)
     df = remove_unused_cols(df, map_cols)
     write_transformed_csv(df, map_dest)
+
+
+def transform_language():
+    language_custom_data = pd.read_csv("./custom-data/Language.csv")
+    write_transformed_csv(language_custom_data, language_dest)
 
 
 # Transform Extracts
@@ -207,3 +309,4 @@ transform_content_finder_condition()
 transform_territory_type()
 transform_place_name()
 transform_map()
+transform_language()
