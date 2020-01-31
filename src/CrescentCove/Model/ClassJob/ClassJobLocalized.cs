@@ -1,6 +1,6 @@
 ﻿namespace FFXIV.CrescentCove
 {
-	public class ClassJobLocalized : ILocalizedData, IClassJobLocalized
+	public class ClassJobLocalized : ILocalizedData
 	{
 		public string Name { get; set; }
 		public string Abbreviation { get; set; }

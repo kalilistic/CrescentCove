@@ -1,13 +1,13 @@
 ﻿namespace FFXIV.CrescentCove
 {
-	public class Item : IGameData, IItem
+	public class Item : IGameData
 	{
 		public int Id { get; set; }
 
 		public void SetPropsByStr(string[] propertyStr)
 		{
 			Id = int.Parse(propertyStr[0]);
-			Localized = new IItemLocalized[]
+			Localized = new ItemLocalized[]
 			{
 				new ItemLocalized
 				{
@@ -59,7 +59,7 @@
 			IsRetired = bool.Parse(propertyStr[30]);
 		}
 
-		public IItemLocalized[] Localized { get; set; }
+		public ItemLocalized[] Localized { get; set; }
 		public bool IsCommon { get; set; }
 		public bool IsRetired { get; set; }
 	}

@@ -1,11 +1,11 @@
 ﻿namespace FFXIV.CrescentCove
 {
-	public class ContentFinderCondition : IGameData, IContentFinderCondition
+	public class ContentFinderCondition : IGameData
 	{
 		public string Name { get; set; }
 		public int TerritoryType { get; set; }
 		public bool HighEndDuty { get; set; }
-		public IContentFinderConditionLocalized[] Localized { get; set; }
+		public ContentFinderConditionLocalized[] Localized { get; set; }
 		public int Id { get; set; }
 
 		public void SetPropsByStr(string[] propertyStr)
@@ -13,7 +13,7 @@
 			Id = int.Parse(propertyStr[0]);
 			TerritoryType = int.Parse(propertyStr[1]);
 			HighEndDuty = bool.Parse(propertyStr[2]);
-			Localized = new IContentFinderConditionLocalized[]
+			Localized = new ContentFinderConditionLocalized[]
 			{
 				new ContentFinderConditionLocalized
 				{

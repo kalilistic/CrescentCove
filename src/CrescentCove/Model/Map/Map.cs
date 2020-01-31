@@ -1,6 +1,6 @@
 ﻿namespace FFXIV.CrescentCove
 {
-	public class Map : IGameData, IMap
+	public class Map : IGameData
 	{
 		public int Id { get; set; }
 

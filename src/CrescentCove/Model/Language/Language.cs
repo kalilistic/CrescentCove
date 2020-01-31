@@ -1,6 +1,6 @@
 ﻿namespace FFXIV.CrescentCove
 {
-	public class Language : IGameData, ILanguage
+	public class Language : IGameData
 	{
 		public int Id { get; set; }
 

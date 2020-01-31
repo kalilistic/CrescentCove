@@ -1,6 +1,6 @@
 ﻿namespace FFXIV.CrescentCove
 {
-	public class TerritoryType : IGameData, ITerritoryType
+	public class TerritoryType : IGameData
 	{
 		public int Id { get; set; }
 

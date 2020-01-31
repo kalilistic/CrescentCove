@@ -1,6 +1,6 @@
 ﻿namespace FFXIV.CrescentCove
 {
-	public class World : IGameData, IWorld
+	public class World : IGameData
 	{
 		public World()
 		{

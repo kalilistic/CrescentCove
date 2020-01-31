@@ -1,6 +1,6 @@
 ﻿namespace FFXIV.CrescentCove
 {
-	public class ItemLocalized : ILocalizedData, IItemLocalized
+	public class ItemLocalized : ILocalizedData
 	{
 		public string ProperName { get; set; }
 		public string SingularName { get; set; }
