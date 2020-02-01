@@ -2,6 +2,10 @@
 {
 	public class TerritoryType : IGameData
 	{
+		public int RegionPlaceNameId { get; set; }
+		public int ZonePlaceNameId { get; set; }
+		public int TerritoryPlaceNameId { get; set; }
+		public int MapId { get; set; }
 		public int Id { get; set; }
 
 		public void SetPropsByStr(string[] propertyStr)
@@ -12,10 +16,5 @@
 			TerritoryPlaceNameId = int.Parse(propertyStr[3]);
 			MapId = int.Parse(propertyStr[4]);
 		}
-
-		public int RegionPlaceNameId { get; set; }
-		public int ZonePlaceNameId { get; set; }
-		public int TerritoryPlaceNameId { get; set; }
-		public int MapId { get; set; }
 	}
 }

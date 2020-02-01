@@ -22,7 +22,7 @@
 			Id = int.Parse(propertyStr[0]);
 			Category = int.Parse(propertyStr[1]);
 			Role = propertyStr[2];
-			Localized = new ClassJobLocalized[]
+			Localized = new[]
 			{
 				new ClassJobLocalized
 				{

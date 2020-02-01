@@ -2,12 +2,15 @@
 {
 	public class PlaceName : IGameData
 	{
+		public PlaceNameLocalized[] Localized { get; set; }
+
+		public string Name { get; set; }
 		public int Id { get; set; }
 
 		public void SetPropsByStr(string[] propertyStr)
 		{
 			Id = int.Parse(propertyStr[0]);
-			Localized = new PlaceNameLocalized[]
+			Localized = new[]
 			{
 				new PlaceNameLocalized
 				{
@@ -31,9 +34,5 @@
 				}
 			};
 		}
-
-		public PlaceNameLocalized[] Localized { get; set; }
-
-		public string Name { get; set; }
 	}
 }
