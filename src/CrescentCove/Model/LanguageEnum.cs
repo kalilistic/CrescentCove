@@ -4,9 +4,9 @@ namespace FFXIV.CrescentCove
 {
 	public enum LanguageEnum
 	{
-		en = 0,
-		de = 1,
+		en = 1,
 		fr = 2,
-		ja = 3
+		de = 3,
+		ja = 4
 	}
 }
