@@ -146,63 +146,70 @@ def create_item_df(lang):
     df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
     df = df.drop([0, 0])
     df = remove_unused_cols(df, item_cols)
-    df["SingularKeyword"] = ""
-    df["PluralKeyword"] = ""
+    df["SingularSearchTerm"] = ""
+    df["PluralSearchTerm"] = ""
     df["SingularREP"] = ""
     df["PluralREP"] = ""
     if lang == "en":
-        df["SingularKeyword"] = df["Singular"]
-        df["PluralKeyword"] = df["Plural"]
-        df.loc[(df["SingularKeyword"].str.startswith("the ")), "SingularKeyword"] = df[
-            "SingularKeyword"
-        ].replace({"^the ": ""}, regex=True)
-        df.loc[(df["SingularKeyword"].str.startswith("an ")), "SingularKeyword"] = df[
-            "SingularKeyword"
-        ].replace({"^an ": ""}, regex=True)
-        df.loc[(df["SingularKeyword"].str.startswith("a ")), "SingularKeyword"] = df[
-            "SingularKeyword"
-        ].replace({"^a ": ""}, regex=True)
-        df.loc[(df["PluralKeyword"].str.startswith("the ")), "PluralKeyword"] = df[
-            "PluralKeyword"
-        ].replace({"^the ": ""}, regex=True)
-        df.loc[(df["PluralKeyword"].str.startswith("an ")), "PluralKeyword"] = df[
-            "PluralKeyword"
-        ].replace({"^an ": "?"}, regex=True)
-        df.loc[(df["PluralKeyword"].str.startswith("a ")), "PluralKeyword"] = df[
-            "PluralKeyword"
-        ].replace({"^a ": ""}, regex=True)
+        df["SingularSearchTerm"] = df["Singular"]
+        df["PluralSearchTerm"] = df["Plural"]
+        df.loc[(df["SingularSearchTerm"].str.startswith("the ")),
+               "SingularSearchTerm"] = df["SingularSearchTerm"].replace({"^the ": ""},
+                                                                        regex=True)
+        df.loc[(df["SingularSearchTerm"].str.startswith("an ")),
+               "SingularSearchTerm"] = df["SingularSearchTerm"].replace({"^an ": ""},
+                                                                        regex=True)
+        df.loc[(df["SingularSearchTerm"].str.startswith("a ")),
+               "SingularSearchTerm"] = df["SingularSearchTerm"].replace({"^a ": ""},
+                                                                        regex=True)
+        df.loc[(df["PluralSearchTerm"].str.startswith("the ")),
+               "PluralSearchTerm"] = df["PluralSearchTerm"].replace({"^the ": ""},
+                                                                    regex=True)
+        df.loc[(df["PluralSearchTerm"].str.startswith("an ")),
+               "PluralSearchTerm"] = df["PluralSearchTerm"].replace({"^an ": "?"},
+                                                                    regex=True)
+        df.loc[(df["PluralSearchTerm"].str.startswith("a ")),
+               "PluralSearchTerm"] = df["PluralSearchTerm"].replace({"^a ": ""},
+                                                                    regex=True)
+    elif lang == "fr":
+        df["SingularSearchTerm"] = df["Singular"]
+        df["PluralSearchTerm"] = df["Plural"]
     elif lang == "de":
+        df["SingularSearchTerm"] = df["Singular"].str.split("[", n=1, expand=True)[
+            0]
+        df["PluralSearchTerm"] = df["Plural"].str.split(
+            "[", n=1, expand=True)[0]
         df["SingularREP"] = df["Singular"]
         df["PluralREP"] = df["Plural"]
-        df["Singular"] = df["Singular"].replace({"\[a\]": ""}, regex=True)
-        df["Singular"] = df["Singular"].replace({"\[t\]": ""}, regex=True)
-        df["Singular"] = df["Singular"].replace({"\[p\]": ""}, regex=True)
-        df["Plural"] = df["Plural"].replace({"\[a\]": ""}, regex=True)
-        df["Plural"] = df["Plural"].replace({"\[t\]": ""}, regex=True)
-        df["Plural"] = df["Plural"].replace({"\[p\]": ""}, regex=True)
-        df["Plural"] = df["Plural"].replace({"\[p ": ""}, regex=True)
         df["SingularREP"] = df["SingularREP"].replace(
-            {"\[a\]": "(?:e|er|es|en)?"}, regex=True
+            {r"\[a\]": "(?:e|er|es|en)?"}, regex=True
         )
         df["SingularREP"] = df["SingularREP"].replace(
-            {"\[t\]": "(?:der|die|das)?"}, regex=True
+            {r"\[t\]": "(?:der|die|das)?"}, regex=True
         )
-        df["SingularREP"] = df["SingularREP"].replace({"\[p\]": ""}, regex=True)
+        df["SingularREP"] = df["SingularREP"].replace(
+            {r"\[p\]": ""}, regex=True)
         df["PluralREP"] = df["PluralREP"].replace(
-            {"\[a\]": "(?:e|er|es|en)?"}, regex=True
+            {r"\[a\]": "(?:e|er|es|en)?"}, regex=True
         )
         df["PluralREP"] = df["PluralREP"].replace(
-            {"\[t\]": "(?:der|die|das)?"}, regex=True
+            {r"\[t\]": "(?:der|die|das)?"}, regex=True
         )
-        df["PluralREP"] = df["PluralREP"].replace({"\[p\]": ""}, regex=True)
-        df["PluralREP"] = df["PluralREP"].replace({"\[p ": ""}, regex=True)
+        df["PluralREP"] = df["PluralREP"].replace({r"\[p\]": ""}, regex=True)
+        df["PluralREP"] = df["PluralREP"].replace({r"\[p ": ""}, regex=True)
         df["SingularREP"] = "^" + df["SingularREP"].astype(str) + "$"
         df["PluralREP"] = "^" + df["PluralREP"].astype(str) + "$"
+    elif lang == "ja":
+        df["SingularSearchTerm"] = df["Singular"]
     df = df.rename(columns={"Singular": "Singular{" + lang + "}"})
     df = df.rename(columns={"Plural": "Plural{" + lang + "}"})
     df = df.rename(columns={"Name": "Name{" + lang + "}"})
-    df = df.rename(columns={"SingularKeyword": "SingularKeyword{" + lang + "}"})
-    df = df.rename(columns={"PluralKeyword": "PluralKeyword{" + lang + "}"})
+    df = df.rename(
+        columns={
+            "SingularSearchTerm": "SingularSearchTerm{" + lang + "}"})
+    df = df.rename(
+        columns={
+            "PluralSearchTerm": "PluralSearchTerm{" + lang + "}"})
     df = df.rename(columns={"SingularREP": "SingularREP{" + lang + "}"})
     df = df.rename(columns={"PluralREP": "PluralREP{" + lang + "}"})
     return df
@@ -218,9 +225,14 @@ def transform_content_finder_condition():
 
 def create_content_finder_condition_df(lang):
     content_finder_condition_src = (
-        src_dir + lang + "/" + content_finder_condition_file_name + property_ext
-    )
-    remove_dummy_headers(content_finder_condition_src, content_finder_condition_dest)
+        src_dir +
+        lang +
+        "/" +
+        content_finder_condition_file_name +
+        property_ext)
+    remove_dummy_headers(
+        content_finder_condition_src,
+        content_finder_condition_dest)
     df = read_csv(content_finder_condition_dest)
     df = rename_key_col(df)
     df["HighEndDuty"] = df["HighEndDuty"].astype(str)

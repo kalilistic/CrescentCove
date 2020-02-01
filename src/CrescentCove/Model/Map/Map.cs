@@ -1,7 +1,9 @@
 ﻿namespace FFXIV.CrescentCove
 {
-	public class Map : IGameData, IMap
+	public class Map : IGameData
 	{
+		public int MapPlaceNameId { get; set; }
+		public int TerritoryTypeId { get; set; }
 		public int Id { get; set; }
 
 		public void SetPropsByStr(string[] propertyStr)
@@ -10,8 +12,5 @@
 			MapPlaceNameId = int.Parse(propertyStr[1]);
 			TerritoryTypeId = int.Parse(propertyStr[2]);
 		}
-
-		public int MapPlaceNameId { get; set; }
-		public int TerritoryTypeId { get; set; }
 	}
 }

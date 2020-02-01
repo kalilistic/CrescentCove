@@ -1,6 +1,6 @@
 ﻿namespace FFXIV.CrescentCove
 {
-	public class ClassJob : IGameData, IClassJob
+	public class ClassJob : IGameData
 	{
 		public ClassJob()
 		{
@@ -13,7 +13,7 @@
 
 		public int Category { get; set; }
 		public string Role { get; set; }
-		public IClassJobLocalized[] Localized { get; set; }
+		public ClassJobLocalized[] Localized { get; set; }
 
 		public int Id { get; set; }
 
@@ -22,7 +22,7 @@
 			Id = int.Parse(propertyStr[0]);
 			Category = int.Parse(propertyStr[1]);
 			Role = propertyStr[2];
-			Localized = new IClassJobLocalized[]
+			Localized = new[]
 			{
 				new ClassJobLocalized
 				{

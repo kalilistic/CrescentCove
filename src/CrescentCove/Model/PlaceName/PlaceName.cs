@@ -1,13 +1,16 @@
 ﻿namespace FFXIV.CrescentCove
 {
-	public class PlaceName : IGameData, IPlaceName
+	public class PlaceName : IGameData
 	{
+		public PlaceNameLocalized[] Localized { get; set; }
+
+		public string Name { get; set; }
 		public int Id { get; set; }
 
 		public void SetPropsByStr(string[] propertyStr)
 		{
 			Id = int.Parse(propertyStr[0]);
-			Localized = new IPlaceNameLocalized[]
+			Localized = new[]
 			{
 				new PlaceNameLocalized
 				{
@@ -31,9 +34,5 @@
 				}
 			};
 		}
-
-		public IPlaceNameLocalized[] Localized { get; set; }
-
-		public string Name { get; set; }
 	}
 }

@@ -1,13 +1,16 @@
 ﻿namespace FFXIV.CrescentCove
 {
-	public class Item : IGameData, IItem
+	public class Item : IGameData
 	{
+		public ItemLocalized[] Localized { get; set; }
+		public bool IsCommon { get; set; }
+		public bool IsRetired { get; set; }
 		public int Id { get; set; }
 
 		public void SetPropsByStr(string[] propertyStr)
 		{
 			Id = int.Parse(propertyStr[0]);
-			Localized = new IItemLocalized[]
+			Localized = new[]
 			{
 				new ItemLocalized
 				{
@@ -15,10 +18,10 @@
 					SingularName = propertyStr[1],
 					PluralName = propertyStr[2],
 					ProperName = propertyStr[3],
-					SingularNameKeyword = propertyStr[4],
-					PluralNameKeyword = propertyStr[5],
-					SingularNameREP = propertyStr[6],
-					PluralNameREP = propertyStr[7]
+					SingularSearchTerm = propertyStr[4],
+					PluralSearchTerm = propertyStr[5],
+					SingularREP = propertyStr[6],
+					PluralREP = propertyStr[7]
 				},
 				new ItemLocalized
 				{
@@ -26,10 +29,10 @@
 					SingularName = propertyStr[8],
 					PluralName = propertyStr[9],
 					ProperName = propertyStr[10],
-					SingularNameKeyword = propertyStr[11],
-					PluralNameKeyword = propertyStr[12],
-					SingularNameREP = propertyStr[13],
-					PluralNameREP = propertyStr[14]
+					SingularSearchTerm = propertyStr[11],
+					PluralSearchTerm = propertyStr[12],
+					SingularREP = propertyStr[13],
+					PluralREP = propertyStr[14]
 				},
 				new ItemLocalized
 				{
@@ -37,10 +40,10 @@
 					SingularName = propertyStr[15],
 					PluralName = propertyStr[16],
 					ProperName = propertyStr[17],
-					SingularNameKeyword = propertyStr[18],
-					PluralNameKeyword = propertyStr[19],
-					SingularNameREP = propertyStr[20],
-					PluralNameREP = propertyStr[21]
+					SingularSearchTerm = propertyStr[18],
+					PluralSearchTerm = propertyStr[19],
+					SingularREP = propertyStr[20],
+					PluralREP = propertyStr[21]
 				},
 				new ItemLocalized
 				{
@@ -48,19 +51,15 @@
 					SingularName = propertyStr[22],
 					PluralName = propertyStr[23],
 					ProperName = propertyStr[24],
-					SingularNameKeyword = propertyStr[25],
-					PluralNameKeyword = propertyStr[26],
-					SingularNameREP = propertyStr[27],
-					PluralNameREP = propertyStr[28]
+					SingularSearchTerm = propertyStr[25],
+					PluralSearchTerm = propertyStr[26],
+					SingularREP = propertyStr[27],
+					PluralREP = propertyStr[28]
 				}
 			};
 
 			IsCommon = bool.Parse(propertyStr[29]);
 			IsRetired = bool.Parse(propertyStr[30]);
 		}
-
-		public IItemLocalized[] Localized { get; set; }
-		public bool IsCommon { get; set; }
-		public bool IsRetired { get; set; }
 	}
 }

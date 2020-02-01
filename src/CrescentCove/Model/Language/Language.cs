@@ -1,7 +1,9 @@
 ﻿namespace FFXIV.CrescentCove
 {
-	public class Language : IGameData, ILanguage
+	public class Language : IGameData
 	{
+		public string Name { get; set; }
+		public string Abbreviation { get; set; }
 		public int Id { get; set; }
 
 		public void SetPropsByStr(string[] propertyStr)
@@ -10,8 +12,5 @@
 			Name = propertyStr[1];
 			Abbreviation = propertyStr[2];
 		}
-
-		public string Name { get; set; }
-		public string Abbreviation { get; set; }
 	}
 }
