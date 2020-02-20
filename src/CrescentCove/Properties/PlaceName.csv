@@ -395,7 +395,7 @@ Arbre gardien""Immerschatten
 [長老の木]"
 420Crystal TowerTour de CristalKristallturmクリスタルタワー
 421Silvertear FallsLac de PleurargentSilbertränenfälle銀泪湖
-422The BraveheartLe CœurbraveDie <Emphasis>Braveheart</Emphasis>ブレイブハート号
+422The <Emphasis>Braveheart</Emphasis>Le CœurbraveDie <Emphasis>Braveheart</Emphasis>ブレイブハート号
 423Entry CounterComptoir d'enregistrementTeilnahmeschalter対戦受付
 424Wolves' Den DocksQuai de l'Antre des loupsDie Wolfshöhle船着場：ウルヴズジェイル
 425MistBruméeDorf des Nebelsミスト・ヴィレッジ
@@ -728,7 +728,7 @@ Guilde des alchimistes""Frondales Physiatrische Akademie
 692Hall of the CestiHall des CestiHalle der Faust拳闘の間
 693Hall of the SecutoresHall des SecutoresHalle des Schwerts剣闘の間
 694Hall of the BestiariiHall des BestiariiHalle der Bestie獣闘の間
-695Frondale's Ward for Friendless FoundlingsClinique pédiatrique de l'Académie médicale de FrondaleFrondales Physiatrische Akademieフロンデール薬学院小児病棟
+695Frondale's Home for Friendless FoundlingsClinique pédiatrique de l'Académie médicale de FrondaleFrondales Physiatrische Akademieフロンデール薬学院小児病棟
 698Hustings StripDistrict politiqueEbene der Redner政庁層
 700Upper DecksLe TillacObere Decks上甲板層
 701Lower DecksL'EntrepontUntere Decks下甲板層
@@ -825,7 +825,7 @@ Guilde des aventuriers""Zur Ertränkten Sorge
 766Marauders' GuildGuilde des maraudeurs (Tour de Corail)Marodeurgilde (Korallenturm)斧術士ギルド前（コーラルタワー）
 767Hawkers' AlleyMarché (La Camelotade)Kaufmannsplatzマーケット（国際街広場）
 768Fishermen's GuildL'Escale du pêcheur (Guildes des pêcheurs & surineurs)Fischergilde (Schurkengilde)漁師ギルド前（双剣士ギルド）
-769Arcanists' GuildGuilde des arcanistesHermetikergilde巴術士ギルド前
+769Arcanists' GuildGuilde des arcanistes (Embarcadère)Hermetikergilde (Fähranleger)巴術士ギルド前（フェリードック）
 770Zephyr Gate (Middle La Noscea)Noscea centrale via la porte du ZéphyrZephyr-Tor (Zentrales La Noscea)ゼファー陸門（中央ラノシア方面）
 771Tempest Gate (Lower La Noscea)Basse-Noscea via la porte de la TempêteSturmtor (Unteres La Noscea)テンペスト陸門（低地ラノシア方面）
 772Adventurers' GuildGuilde des aventuriersAben<SoftHyphen/>teurer<SoftHyphen/>gilde冒険者ギルド前
@@ -2255,7 +2255,7 @@ Guilde des surineurs""Schwestern von Edelweiß
 2252Landing Site 03Aire d'atterrissage 03Landeplatz 03第三着陸地点
 2253Landing Site 04Aire d'atterrissage 04Landeplatz 04第四着陸地点
 2254Landing Site 05Aire d'atterrissage 05Landeplatz 05第五着陸地点
-2255The BountyLa BontéDie <Emphasis>Bounty</Emphasis>バウンティ号の漂着地
+2255The <Emphasis>Bounty</Emphasis>La BontéDie <Emphasis>Bounty</Emphasis>バウンティ号の漂着地
 2256Containment Bay S1T7Unité de contention S1P7Arretur S1T7コンテイメントベイS1T7
 2257Diadem SkyspringsSources du DiadèmeDiadem-Himmelsquellenディアデム諸島の湧水地
 2258Diadem GrottoGrotte du DiadèmeDiadem-Grotteディアデム諸島の洞穴
@@ -2524,6 +2524,7 @@ Guilde des surineurs""Schwestern von Edelweiß
 2524Loch Seld Northwestern LakebedFond du lac Seld (nord-ouest)Seldsee (Nordwest)ロッホ・セル湖底北西
 2525Loch Seld Central LakebedFond du lac Seld (centre)Seldsee (Mitte)ロッホ・セル湖底中央
 2526Loch Seld Southeastern LakebedFond du lac Seld (sud-est)Seldsee (Nordost)ロッホ・セル湖底南東
+2527The Falling City of NymCité croulante de NymSchwebende Stadt Nymニーム浮遊遺跡風特設アスレチック
 2530Eureka PyrosEurêka PyrosEureka Pyrosエウレカ：ピューロス帯
 2531NorthpointLe SeptentrionNordkuppeノースポイント
 2532FlurryFront glacialSchneewehenスノウクラッシュ
@@ -2902,6 +2903,7 @@ Guilde des surineurs""Schwestern von Edelweiß
 2931Kugane Aetheryte PlazaPlace de l'ÉthériteÄtherytenplatzエーテライト・プラザ
 2932Kugane OhashiRevanche au vieux châteauRevanche in den Ruinen真ギルガメッシュ討滅戦
 2933The Dragon's NeckLe Col du dragonDrachenhals-Kolosseumアマジナ杯闘技会決勝戦
+2934Ferry DocksEmbarcadèreFähranleger船着場
 2949NorvrandtNorvrandtNorvrandtノルヴラント
 2950NorvrandtNorvrandtNorvrandtノルヴラント
 2951The CrystariumCristariumCrystariumクリスタリウム
@@ -3092,7 +3094,7 @@ Guilde des surineurs""Schwestern von Edelweiß
 3136KelkRuines de KelkKelkケルク遺跡
 3137Lift StationMonte-chargeGondelturmゴンドラ操作場
 3138Nuvy's LeavingsMines abandonnées de NuvyNuvys Grubeヌベイ旧鉱山
-3139Malikah's WellPuits de MalikahSüdliche Bernsteinhügelマリカの大井戸
+3139Malikah's WellPuits de MalikahMalikahs Brunnenマリカの大井戸
 3140LadleLa LoucheDer Nasse Bahnhof水の駅
 3141Lift StationMonte-chargeGondelturmゴンドラ操作場
 3142The Pristine Palace of Amh MalikNouveau palais d'Amh MalikPalast von Amh Malikアム・マリク新宮殿
@@ -3120,7 +3122,7 @@ Guilde des surineurs""Schwestern von Edelweiß
 3164Lyhe GhiahLyhe GhiahSchloss Lyhe Ghiahリェー・ギア城
 3165The Citia SwampsMarécages du CitiaCitia-Sumpflandシチュア湿地
 3166Lake Tusi Mek'taLac Tusi Mek'taSchlangensee Tusi Mek'taトゥシ・メキタ湖
-3167The Blind Forest of Yx'MajaForêt interdite d'Yx'MajaDer Ungesehene Wald Yx'Majaイキス・マヤエの森
+3167The Blind Forest of Yx'MajaForêt interdite d'Yx'MajaDer Ungesehene Wald von Yx'Majaイキス・マヤエの森
 3168The K'mul AstropolisAstropole des K'mulK'mul-Astropolisクムル星遺跡群
 3169Fort GohnForteresse de GohnGohn-Festeゴーンの砦
 3170SlitherboughSerpentigeSchlangenzweigスリザーバウ
@@ -3394,4 +3396,40 @@ Guilde des surineurs""Schwestern von Edelweiß
 3439Lower StratumNiveau inférieurUntergeschoss工場廃墟：下層
 3440Deep StratumProfondeursFabriktiefen工場廃墟：深層
 3441The Copied FactoryRéplique de l'usine désaffectéeDie kopierte Fabrik複製サレタ工場廃墟
+3442Cinder DriftLes Nuées de BrandonsVerteidigungslinie Ghimlytギムリト防衛ライン
+3443The High SeasPleine merAuf Hoher Seeオーシャンフィッシング
+3444Galadion BayBaie de GaladionGaladion-Buchtガラディオン湾
+3445The Southern Strait of MerlthorDétroit sud de MerlthorMerlthorstraße (Süd)メルトール海峡南
+3446The Northern Strait of MerlthorDétroit nord de MerlthorMerlthorstraße (Nord)メルトール海峡北
+3447Rhotano SeaMer de RhotanoRhotano-Seeロータノ海
+3448Outer Galadion BayLarge de la baie de GaladionGaladion-Bucht - Hochseeガラディオン湾沖合
+3449Galadion Spectral CurrentCourant spectral (large de la baie de Galadion)Galadion-Bucht - Phantomströmungガラディオン湾沖合：幻海流
+3450The Southern Strait of MerlthorDétroit sud de MerlthorSüdliche Straße von Merlthorメルトール海峡南
+3451Southern Merlthor Spectral CurrentCourant spectral (détroit sud de Merlthor)Merlthorstraße (Süd) - Phantomströmungメルトール海峡南：幻海流
+3452The Northern Strait of MerlthorDétroit nord de MerlthorNördliche Straße von Merlthorメルトール海峡北
+3453Northern Merlthor Spectral CurrentCourant spectral (détroit nord de Merlthor)Merlthorstraße (Nord) - Phantomströmungメルトール海峡北：幻海流
+3454Open Rhotano SeaLarge de la mer de RhotanoRhotano-See - Hochseeロータノ海沖合
+3455Rhotano Spectral CurrentCourant spectral (large de la mer de Rhotano)Rhotano-See - Phantomströmungロータノ海沖合：幻海流
+3456Central Lake Tusi Mek'taCentre du lac Tusi Mek'taTusi Mek'ta (Mitte)トゥシ・メキタ湖中央
+3457South Lake Tusi Mek'taSud du lac Tusi Mek'taTusi Mek'ta (Süden)トゥシ・メキタ湖南
+3458Mjrl's TearsLes Larmes de MjrlMjrls Tränenミュリルの落涙
+3459Bismarck's BrowÉchine de BismarckBismarcks Stirnビスマルクの額
+3460The Garden of RecollectionJardin des souvenirsGarten der Erinnerungen想起の庭
+3461AnamnesisAnamnesisHalle der Erinnerungen想起の館
+3462KatharsisCatharsisPlatz der Katharsisカタルシスの広場
+3463DoxaDoxaPlatz der Doxaドクサの広間
+3464The Archive EternalSalle des conceptsHalle der Ideenイデア保管庫
+3465NoesisNoesisDie Noesisノエシスの間
+3466The Setebos TrenchFaille de SetebosSetebos-Tiefseegrabenセティボス海溝
+3467Anamnesis AnyderAnamnesis AnydreAnamnesis Anyderアニドラス・アナムネーシス
+3468The Gandof Thunder PlainsPlaine foudroyée de GandofGandoph-Donnersteppeガンドフ雷平原
+3469AshfallBassin cendreuxAschenfall灰の旅程
+3470The HaloPont supérieur d'ÉdenDas Deckエデン甲板
+3471Trial's ThresholdAntichambre de l'épreuveHalle der Prüfung徳測りし前室
+3472Hopl's StopplePlateau de HoplHopls Pfropfenホパル古盤
+3477The <Emphasis>Endeavor</Emphasis>L'AmbitionDie <Emphasis>Endeavor</Emphasis>エンデバー号
+3487Great GlacierGrand GlacierGletscher大氷河
+3488Frozen ReflectionsGrand Glacier (éclaté) Gespaltener Gletscher分断された大氷河
+3490Sunken StructuresVestiges apparentsVersunkener Vorplatz遺構表層
+3491Sunken SanctumVestiges dormantsVersunkene Hallen遺構深層
 2405？？？？

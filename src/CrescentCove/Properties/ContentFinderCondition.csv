@@ -246,7 +246,7 @@
 264720FalseEmanation (Extreme)Émanation (extrême)Zenit der Götter - Lakshmi極ラクシュミ討滅戦
 265722FalseOur Unsung HeroesL'espoir en héritageEin Wunsch aus alten Zeiten時をかける願い
 266718FalseThe Heart of the ProblemPassion guerrièreKriegerische Leidenschaft燃えよゴージ！
-267713FalseDarkwing DragonAussi sombre que la nuitDer tobende Drache漆黒の巨竜
+267713FalseDark as the Night SkyAussi sombre que la nuitDer tobende Drache漆黒の巨竜
 268712Falsethe Lost Canals of Uznairles Canaux perdus d'UznairKanäle von Uznair宝物庫 ウズネアカナル
 269684FalseThe ResonantLa ruse d'UriangerWege zur Transzendenzウリエンジェの秘策
 270706FalseRaising the SwordLa finale des championsDie hohe Kunst des Schwertkampfsさらなる剣術の高みへ
@@ -453,7 +453,7 @@
 651823Falsethe Qitana RavelL'Enchevêtrement des QitariIrrungen der Qitari古跡探索 キタンナ神影洞
 652838FalseAmaurotAmauroteAmaurot終末幻想 アーモロート
 653849FalseEden's Gate: ResurrectionL'Éveil d'Éden - RésurrectionEdens Erwachen - Auferstehung希望の園エデン：覚醒編1
-654853TrueEden's Gate: Resurrection (Savage)L'Éveil d'Éden - Résurrection (sadique)Edens Erwachen - Auferstehung (episch)希望の園エデン零式：覚醒編1
+654853FalseEden's Gate: Resurrection (Savage)L'Éveil d'Éden - Résurrection (sadique)Edens Erwachen - Auferstehung (episch)希望の園エデン零式：覚醒編1
 655840Falsethe TwinningLa Macle de SyrcusDer Kristallzwilling異界遺構 シルクス・ツイニング
 656836FalseMalikah's Wellle Puits de MalikahMalikahs Brunnen爽涼離宮 マリカの大井戸
 657845FalseThe Dancing Plaguela Valse du MonarqueOffenbarung - Titaniaティターニア討滅戦
@@ -468,17 +468,17 @@
 680860FalseComing CleanSur les rails de Nabaath ArengVater und Bruder廃都ナバスアレン
 681859FalseLegend of the Not-so-hidden TempleLe Confessionnal de Toupasa l'ancienDer Beichtstuhl von Toupasa dem Älteren仕掛けと呪いと毒と
 682851FalseEden's Gate: InundationL'Éveil d'Éden - DélugeEdens Erwachen - Überflutung希望の園エデン：覚醒編3
-683855TrueEden's Gate: Inundation (Savage)L'Éveil d'Éden - Déluge (sadique)Edens Erwachen - Überflutung (episch)希望の園エデン零式：覚醒編3
+683855FalseEden's Gate: Inundation (Savage)L'Éveil d'Éden - Déluge (sadique)Edens Erwachen - Überflutung (episch)希望の園エデン零式：覚醒編3
 684850FalseEden's Gate: DescentL'Éveil d'Éden - DescenteEdens Erwachen - Niederkunft希望の園エデン：覚醒編2
-685854TrueEden's Gate: Descent (Savage)L'Éveil d'Éden - Descente (sadique)Edens Erwachen - Niederkunft (episch)希望の園エデン零式：覚醒編2
+685854FalseEden's Gate: Descent (Savage)L'Éveil d'Éden - Descente (sadique)Edens Erwachen - Niederkunft (episch)希望の園エデン零式：覚醒編2
 686876FalseNyelbert's LamentUne cupidité bien généreuseEin großes Opferナイルベルトの後悔
 687847FalseThe Dying Gasple Râle de l'AgonieOffenbarung - Hadesハーデス討滅戦
 688879FalseThe Dungeons of Lyhe Ghiahle Donjon hypogéen du Lyhe GhiahVerliese von Lyhe Ghiah宝物庫 リェー・ギア・ダンジョン
 689852FalseEden's Gate: SepultureL'Éveil d'Éden - InhumationEdens Erwachen - Beerdigung希望の園エデン：覚醒編4
-690856TrueEden's Gate: Sepulture (Savage)L'Éveil d'Éden - Inhumation (sadique)Edens Erwachen - Beerdigung (episch)希望の園エデン零式：覚醒編4
+690856FalseEden's Gate: Sepulture (Savage)L'Éveil d'Éden - Inhumation (sadique)Edens Erwachen - Beerdigung (episch)希望の園エデン零式：覚醒編4
 691875FalseThe Hunter's LegacyLa chasseuse de légendeDer Legende auf der Spur勇気の狩人
 692884FalseThe Grand Cosmosle Cosmos coruscantChateau Cosmea魔法宮殿 グラン・コスモス
-693885TrueThe Minstrel's Ballad: Hades's ElegyLe Râle de l'Agonie (extrême)Letzte Läuterung - Hades極ハーデス討滅戦
+693885FalseThe Minstrel's Ballad: Hades's ElegyLe Râle de l'Agonie (extrême)Letzte Läuterung - Hades極ハーデス討滅戦
 694887TrueThe Epic of Alexander (Ultimate)L'Odyssée d'Alexander (fatal)Alexander (fatal)絶アレキサンダー討滅戦
 695796FalsePapa MiaPapa Humbaba, le paternel aux gros brasPapa Mia豪腕の父親「フンババ・パパ」
 696796FalseLock up Your SnortersFungaaah! Et boum!Explosives Schnaufenはないき爆破デスマッチ
@@ -489,3 +489,30 @@
 701888FalseOnsal Hakair (Danshig Naadam)Onsal Hakair (Danshig Naadam)Onsal Hakair (Danshig Naadam)オンサル・ハカイル (終節戦)
 702893FalseVows of Virtue, Deeds of CrueltyVœux de vertu, actes de cruautéDer Wolf und der Drachenreiter白き誓約、黒き密約
 703894FalseAs the Heart BidsÀ l'écoute de soiTrubel im Traumlandこの心が望むがままに
+705899FalseLeap of FaithHaute voltigeKaktor-Kletterwand挑戦！ ジャンピングアスレチック
+706899FalseLeap of FaithHaute voltigeKaktor-Kletterwand挑戦！ ジャンピングアスレチック
+707899FalseLeap of FaithHaute voltigeKaktor-Kletterwand挑戦！ ジャンピングアスレチック
+708899FalseLeap of FaithHaute voltigeKaktor-Kletterwand挑戦！ ジャンピングアスレチック
+709899FalseLeap of FaithHaute voltigeKaktor-Kletterwand挑戦！ ジャンピングアスレチック
+710899FalseLeap of FaithHaute voltigeKaktor-Kletterwand挑戦！ ジャンピングアスレチック
+711899FalseLeap of FaithHaute voltigeKaktor-Kletterwand挑戦！ ジャンピングアスレチック
+712899FalseLeap of FaithHaute voltigeKaktor-Kletterwand挑戦！ ジャンピングアスレチック
+713899FalseLeap of FaithHaute voltigeKaktor-Kletterwand挑戦！ ジャンピングアスレチック
+714898FalseAnamnesis AnyderAnamnesis AnydreAnamnesis Anyder黒風海底 アニドラス・アナムネーシス
+715902FalseEden's Verse: FulminationLes Accords d'Éden - FulminationEdens Resonanz - Entladung希望の園エデン：共鳴編1
+716906TrueEden's Verse: Fulmination (Savage)Les Accords d'Éden - Fulmination (sadique)Edens Resonanz - Entladung (episch)希望の園エデン零式：共鳴編1
+717897FalseCinder DriftLes Nuées de BrandonsRubinfeuer - Entfesselungルビーウェポン破壊作戦
+718912TrueCinder Drift (Extreme)Les Nuées de Brandons (extrême)Rubinfeuer - Trauma極ルビーウェポン破壊作戦
+719903FalseEden's Verse: FurorLes Accords d'Éden - FureurEdens Resonanz - Raserei希望の園エデン：共鳴編2
+720907TrueEden's Verse: Furor (Savage)Les Accords d'Éden - Fureur (sadique)Edens Resonanz - Raserei (episch)希望の園エデン零式：共鳴編2
+721900FalseOcean FishingPêche en merAuf großer Fahrtオーシャンフィッシング
+724914FalseA Sleep DisturbedL'épreuve ronkaVon schlafenden Helden汝、英雄の眠り妨げるは
+726904FalseEden's Verse: IconoclasmLes Accords d'Éden - IconoclasmeEdens Resonanz - Bildersturm希望の園エデン：共鳴編3
+727908TrueEden's Verse: Iconoclasm (Savage)Les Accords d'Éden - Iconoclasme (sadique)Edens Resonanz - Bildersturm (episch)希望の園エデン零式：共鳴編3
+728905FalseEden's Verse: RefulgenceLes Accords d'Éden - ÉclatEdens Resonanz - Erstarrung希望の園エデン：共鳴編4
+729909TrueEden's Verse: Refulgence (Savage)Les Accords d'Éden - Éclat (sadique)Edens Resonanz - Erstarrung (episch)希望の園エデン零式：共鳴編4
+730900FalseOcean FishingPêche en merAuf großer Fahrtオーシャンフィッシング
+731900FalseOcean FishingPêche en merAuf großer Fahrtオーシャンフィッシング
+732900FalseOcean FishingPêche en merAuf großer Fahrtオーシャンフィッシング
+733900FalseOcean FishingPêche en merAuf großer Fahrtオーシャンフィッシング
+734900FalseOcean FishingPêche en merAuf großer Fahrtオーシャンフィッシング
