@@ -153,22 +153,22 @@ def create_item_df(lang):
     if lang == "en":
         df["SingularSearchTerm"] = df["Singular"]
         df["PluralSearchTerm"] = df["Plural"]
-        df.loc[(df["SingularSearchTerm"].str.startswith("the ")),
+        df.loc[(df["SingularSearchTerm"].str.startswith("the ", na=False)),
                "SingularSearchTerm"] = df["SingularSearchTerm"].replace({"^the ": ""},
                                                                         regex=True)
-        df.loc[(df["SingularSearchTerm"].str.startswith("an ")),
+        df.loc[(df["SingularSearchTerm"].str.startswith("an ", na=False)),
                "SingularSearchTerm"] = df["SingularSearchTerm"].replace({"^an ": ""},
                                                                         regex=True)
-        df.loc[(df["SingularSearchTerm"].str.startswith("a ")),
+        df.loc[(df["SingularSearchTerm"].str.startswith("a ", na=False)),
                "SingularSearchTerm"] = df["SingularSearchTerm"].replace({"^a ": ""},
                                                                         regex=True)
-        df.loc[(df["PluralSearchTerm"].str.startswith("the ")),
+        df.loc[(df["PluralSearchTerm"].str.startswith("the ", na=False)),
                "PluralSearchTerm"] = df["PluralSearchTerm"].replace({"^the ": ""},
                                                                     regex=True)
-        df.loc[(df["PluralSearchTerm"].str.startswith("an ")),
+        df.loc[(df["PluralSearchTerm"].str.startswith("an ", na=False)),
                "PluralSearchTerm"] = df["PluralSearchTerm"].replace({"^an ": "?"},
                                                                     regex=True)
-        df.loc[(df["PluralSearchTerm"].str.startswith("a ")),
+        df.loc[(df["PluralSearchTerm"].str.startswith("a ", na=False)),
                "PluralSearchTerm"] = df["PluralSearchTerm"].replace({"^a ": ""},
                                                                     regex=True)
     elif lang == "fr":
