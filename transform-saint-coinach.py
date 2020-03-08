@@ -197,6 +197,10 @@ def create_item_df(lang):
         )
         df["PluralREP"] = df["PluralREP"].replace({r"\[p\]": ""}, regex=True)
         df["PluralREP"] = df["PluralREP"].replace({r"\[p ": ""}, regex=True)
+        df["SingularREP"] = df["SingularREP"].replace({"\(": "\\("}, regex=True)
+        df["SingularREP"] = df["SingularREP"].replace({"\)": "\\)"}, regex=True)
+        df["PluralREP"] = df["PluralREP"].replace({"\(": "\\("}, regex=True)
+        df["PluralREP"] = df["PluralREP"].replace({"\)": "\\)"}, regex=True)
         df["SingularREP"] = "^" + df["SingularREP"].astype(str) + "$"
         df["PluralREP"] = "^" + df["PluralREP"].astype(str) + "$"
     elif lang == "ja":
