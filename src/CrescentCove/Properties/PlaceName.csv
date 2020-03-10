@@ -2555,6 +2555,7 @@ Guilde des surineurs""Schwestern von Edelweiß
 2557Personal SuiteChambre personnelleQuartier居室 (宿屋)
 2558The Crystalline MeanHalle du JusteManufaktur der Gemeinschaftミーン工芸館取引
 2559Skybuilders' BoardPanneau d'in<SoftHyphen/>for<SoftHyphen/>ma<SoftHyphen/>tionsSchwarzes Brett der Himmelsstadt復興事業掲示板
+2560Kupo of FortuneGuichet du Kupo de la fortuneGlücks-Kupoクポフォーチュン
 2586The Ghimlyt DarkLes Ténèbres de GhimlytGhimlyt-Finsternisギムリトダーク
 2587North Mercenary BaseBase nord des mercenairesSöldnerlager Nordノース・マーシナリーベース
 2588South Mercenary BaseBase sud des mercenairesSöldnerlager Südサウス・マーシナリーベース
@@ -3139,6 +3140,7 @@ Guilde des surineurs""Schwestern von Edelweiß
 3181The Wild FeteLa Frairie sauvageWildgartenワイルドガーデン
 3182BowrestHalte de l'ArchèreBogenruh射手の露宿
 3183Mjrl's RegretLa Nostalgie de MjrlMjrls Sehnsuchtミュリルの郷愁
+3184WindmireTourbillons venteuxWirbelwind風の渦
 3185The Morning StarsÉtoiles du MatinMorgensterne四つの明星
 3186Ox'Gatorl MulMul d'Ox'GatorlOx'Gatorl Mulガトル神のムル
 3187Yx'Lokwa MulMul d'Yx'LokwaYx'Lokwa Mulロックワ神のムル
@@ -3427,9 +3429,14 @@ Guilde des surineurs""Schwestern von Edelweiß
 3470The HaloPont supérieur d'ÉdenDas Deckエデン甲板
 3471Trial's ThresholdAntichambre de l'épreuveHalle der Prüfung徳測りし前室
 3472Hopl's StopplePlateau de HoplHopls Pfropfenホパル古盤
+3473The MattockLe HoyauKreuzkarst-Spalier十字鍬通り
+3474Saint Roelle's DaisEstrade de Sainte RoelleEstrade der Sankt Roelle聖ロエル広場
+3475The New NestLe NichoirDas Genistニューネスト居住区
+3476Rolanberry FieldChamps de RolanberryRolanbeeren-Feldロランベリー・フィールド
 3477The <Emphasis>Endeavor</Emphasis>L'AmbitionDie <Emphasis>Endeavor</Emphasis>エンデバー号
 3487Great GlacierGrand GlacierGletscher大氷河
 3488Frozen ReflectionsGrand Glacier (éclaté) Gespaltener Gletscher分断された大氷河
+3489Windswept CloudtopCimes éventéesSturmumtostes Wolkenmeer風吹き上がる雲海
 3490Sunken StructuresVestiges apparentsVersunkener Vorplatz遺構表層
 3491Sunken SanctumVestiges dormantsVersunkene Hallen遺構深層
 2405？？？？
