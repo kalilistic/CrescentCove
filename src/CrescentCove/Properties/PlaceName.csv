@@ -2233,7 +2233,7 @@ Guilde des surineurs""Schwestern von Edelweiß
 2221Black Iron BridgePont du Fer noirSchwarzeisen-Brückeブラックアイアン・ブリッジ
 2222The Ninth VareNeufiesme CeptreNeuntes Zepterナインスヴェアー
 2223Gorgagne HoldingPrairie de GorgagneGorgagne-Weidenゴルガニュ牧草地
-2224The North StarL'Étoile du nordDie Nordsternノーススター号
+2224The <Emphasis>North Star</Emphasis>L'Étoile du nordDie Nordsternノーススター号
 2225Oakum LandingQuai de la FilasseKalfater-Stegオーカム波止場
 2227DragonspitGlaire-de-dragonDrachengeiferドラゴンスピット
 2228The WatcherLe VeilleurDer Wächterザ・ウォッチャー
@@ -2905,6 +2905,7 @@ Guilde des surineurs""Schwestern von Edelweiß
 2932Kugane OhashiRevanche au vieux châteauRevanche in den Ruinen真ギルガメッシュ討滅戦
 2933The Dragon's NeckLe Col du dragonDrachenhals-Kolosseumアマジナ杯闘技会決勝戦
 2934Ferry DocksEmbarcadèreFähranleger船着場
+2935GangosGangosGangosガンゴッシュ
 2949NorvrandtNorvrandtNorvrandtノルヴラント
 2950NorvrandtNorvrandtNorvrandtノルヴラント
 2951The CrystariumCristariumCrystariumクリスタリウム
@@ -3282,7 +3283,7 @@ Guilde des surineurs""Schwestern von Edelweiß
 3323West Caliban GapOuest de la caverne de CalibanCalibans Nistplatz (Westen)キャリバンの古巣穴西
 3324East Caliban GapEst de la caverne de CalibanCalibans Nistplatz (Osten)キャリバンの古巣穴東
 3325PurpureGrotte purpurinePurpurhöhleプルプラ洞
-3326The Norvrandt SlopeMarge continentale de NorvrandtCaliban-Furcheノルヴラント大陸斜面
+3326The Norvrandt SlopeMarge continentale de NorvrandtNorvrandt-Hangノルヴラント大陸斜面
 3327The Crystarium Aetheryte PlazaPlace de l'ÉthériteÄtherytenplatzエーテライト・プラザ
 3328Musica Universalis MarketsMarché (Musica Universalis)Musica Universalisマーケット（ムジカ・ユニバーサリス）
 3329Temenos RookeryCouvée de TemenosTierhof Temenosテメノスルカリー牧場
@@ -3434,6 +3435,15 @@ Guilde des surineurs""Schwestern von Edelweiß
 3475The New NestLe NichoirDas Genistニューネスト居住区
 3476Rolanberry FieldChamps de RolanberryRolanbeeren-Feldロランベリー・フィールド
 3477The <Emphasis>Endeavor</Emphasis>L'AmbitionDie <Emphasis>Endeavor</Emphasis>エンデバー号
+3478GangosGangosGangosガンゴッシュ
+3479Cid's MemoryMémoire de CidCids Gedächtnisシドの記憶空間
+3480Cardo MaximusCardo maximusCardo Maximusシタデル・ボズヤ大通り
+3481InsulaeInsulaeInsulaeシタデル・ボズヤ居住区
+3482Bozja ForumForum bozjienBozja-Forumシタデル・ボズヤ広場
+3483PraetenturaPraetenturaPraetenturaプリンシピア前
+3484PrincipiaPrincipiaPrincipiaプリンシピア
+3485Lunar TransmitterTour de transmissionLunare Sendeanlage交信雷波塔
+3486Transmission ControlSalle de contrôleSignalkontrollstation交信雷波塔管制室
 3487Great GlacierGrand GlacierGletscher大氷河
 3488Frozen ReflectionsGrand Glacier (éclaté) Gespaltener Gletscher分断された大氷河
 3489Windswept CloudtopCimes éventéesSturmumtostes Wolkenmeer風吹き上がる雲海
